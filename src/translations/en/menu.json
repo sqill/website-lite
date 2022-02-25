@@ -1,0 +1,8 @@
+{
+  "options": [
+    { "label": "home", "url": "HOME" },
+    { "label": "athlete", "url": "ATHLETE" },
+    { "label": "sqill for business", "url": "SQILL_FOR_BUSINESS" },
+    { "label": "sqill for pros", "url": "SQILL_FOR_PROS" }
+  ]
+}

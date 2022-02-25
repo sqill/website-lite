@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "sqill | Contacts",
+    "description": "",
+    "keywords": ""
+  },
+  "header": {
+    "title": "Contacts",
+    "form": {
+      "fields": [
+        { "id": "Name", "label": "Name", "type": "text" },
+        { "id": "About", "label": "Company/Sport", "type": "text" },
+        { "id": "Email", "label": "Email", "type": "email" },
+        { "id": "Phone", "label": "Phone Number", "type": "number" },
+        { "id": "VAT", "label": "VAT", "type": "number" }
+      ],
+      "button": "Let's talk",
+      "feedback": {
+        "title": "New registration submitted with success.",
+        "text": "We will send you an email with the next steps"
+      }
+    }
+  }
+}

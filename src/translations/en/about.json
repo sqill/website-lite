@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "sqill | About us",
+    "description": "",
+    "keywords": ""
+  },
+  "header": {
+    "title": "About us",
+    "manifesto": {
+      "title": "OUR MANIFESTO",
+      "subtitle": "Power to the athletes",
+      "text": "<p><span>You</span> love the game since <span>you</span> remember. <span>You</span> can't even point out the day it all started. Can <span>you</span>? The day it bit <span>you</span>? That passion… where did it come from? It arrived without warning and when <span>you</span> noticed… it had absorbed <span>you</span>.</p><p><b>All of <span>you</span>.</b></p><p>No one gets it. Your friends do not get it. The late practices pouring rain… the smelly clothes dripping drops of sweat… all those night outs <span>you</span> abdicate. <span>You</span> are too anxious to sleep the night before and too excited to talk about anything else the day after. The weekend match! It is the only thing that matters!</p><p>It is an addiction. <span>You</span> just want more: more goals, more dribbles, more runs, more shots, more! <span>You</span> start becoming very competitive, <span>you</span> transcend yourself physically and <span>you</span> start doing the unthinkable… what others cannot do. Your performances bring out emotions from those watching. <span>You</span> start producing art! Athletes are like… artists. <span>You</span> are an artist.</p><p>Are <span>you</span> showing out like any other artist? The magic <span>you</span> do, those throws from downtown, the hole in one, the game-winning smash, the unbelievable dime… Are they real? Or just a myth?... Who are <span>you</span>? As an artist.</p><br><p><b>Who are <span>you</span>?</b><br><b>Where are <span>you</span>?</b><br><b>Are <span>you</span> where <span>you</span> belong?</b><br><b>Have <span>you</span> conquered what <span>you</span> imagined?</b><br><b>Do <span>you</span> control your future?</b><br><b>Do the streets know your name?</b></p><br><p><b>They will.</b><br><br><b>Let us help <span>you</span> out.</b><br><b>We will produce magic together.</b></p>",
+      "key": "you",
+      "signature": ", own your future"
+    }
+  },
+  "section1": {
+    "title": "Supported by:",
+    "options": [
+      { "label": "tb logo", "logo": "partner_tb.png", "height": "66", "width": "99" },
+      { "label": "demium logo", "logo": "partner_demium.png", "height": "32", "width": "180" },
+      { "label": "start up lisboa logo", "logo": "partner_up.png", "height": "80", "width": "147" },
+      { "label": "acredita portugal logo", "logo": "partner_acredita.png", "height": "95", "width": "192" },
+      { "label": "kcs it logo", "logo": "partner_kcs.png", "height": "41", "width": "195" },
+      { "label": "vda logo", "logo": "partner_vda.png", "height": "120", "width": "120" },
+      { "label": "cca law firm logo", "logo": "partner_cca.png", "height": "41", "width": "164" }
+    ]
+  }
+}

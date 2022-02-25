@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "sqill | Sobre nós",
+    "description": "",
+    "keywords": ""
+  },
+  "header": {
+    "title": "Sobre nós",
+    "manifesto": {
+      "title": "Manifesto",
+      "subtitle": "Poder para os atletas",
+      "text": "",
+      "key": "tu",
+      "signature": ", controla o teu futuro"
+    }
+  },
+  "section1": {
+    "title": "Parceiros institucionais",
+    "options": [
+      { "label": "tb logo", "logo": "partner_tb.png", "height": "66", "width": "99" },
+      { "label": "demium logo", "logo": "partner_demium.png", "height": "32", "width": "180" },
+      { "label": "start up lisboa logo", "logo": "partner_up.png", "height": "80", "width": "147" },
+      { "label": "acredita portugal logo", "logo": "partner_acredita.png", "height": "95", "width": "192" },
+      { "label": "kcs it logo", "logo": "partner_kcs.png", "height": "41", "width": "195" },
+      { "label": "vda logo", "logo": "partner_vda.png", "height": "120", "width": "120" },
+      { "label": "cca law firm logo", "logo": "partner_cca.png", "height": "41", "width": "164" }
+    ]
+  }
+}

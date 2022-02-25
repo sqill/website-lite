@@ -1,0 +1,33 @@
+{
+  "description": "PT PT This is a non-page component that requires its own namespace",
+  "copyright": "sqill (Success Invitation Lda.)",
+  "country": {
+    "title": "Country",
+    "options": [
+      { "label": "Portugal" },
+      { "label": "Brasil" }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "options": [
+      { "label": "Sobre nós", "url": "ABOUT" },
+      { "label": "Blog", "url": "BLOG" },
+      { "label": "FAQs", "url": "FAQS" },
+      { "label": "Termos e Condições", "url": "TERMS_AND_CONDITIONS" },
+      { "label": "Política de Privacidade", "url": "PRIVACY_POLICY" },
+      { "label": "Contactos", "url": "CONTACTS" }
+    ]
+  },
+  "social": {
+    "title": "Social",
+    "options": [
+      { "label": "Facebook", "url": "FACEBOOK_URL" },
+      { "label": "Instagram", "url": "INSTAGRAM_URL" },
+      { "label": "Twitter", "url": "TWITTER_URL" },
+      { "label": "Linkedin", "url": "LINKEDIN_URL" },
+      { "label": "Google Play", "url": "PLAY_STORE_URL" },
+      { "label": "App Store", "url": "APP_STORE_URL" }
+    ]
+  }
+}

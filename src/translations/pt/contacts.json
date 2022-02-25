@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "sqill | Contactos",
+    "description": "",
+    "keywords": ""
+  },
+  "header": {
+    "title": "Contactos",
+    "form": {
+      "fields": [
+        { "id": "Name", "label": "Nome", "type": "text" },
+        { "id": "About", "label": "Empresa/Sport", "type": "text" },
+        { "id": "Email", "label": "Email", "type": "email" },
+        { "id": "Phone", "label": "Telemóvel", "type": "number" },
+        { "id": "VAT", "label": "NIF", "type": "number" }
+      ],
+      "button": "Let's talk",
+      "feedback": {
+        "title": "New registration submitted with success.",
+        "text": "We will send you an email with the next steps"
+      }
+    }
+  }
+}

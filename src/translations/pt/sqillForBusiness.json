@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "sqill | sqill 4 business",
+    "description": "",
+    "keywords": ""
+  },
+  "header": {
+    "hint": "EXPERIMENTA GRÁTIS O PRIMEIRO MÊS",
+    "title": "sqill 4 business",
+    "subtitle": "AJUDAMOS AS ORGANIZAÇÕES DESPORTIVAS A CRIAREM MELHOR CONTEÚDO VÍDEO PARA AS SUAS REDES SOCIAIS, CONECTANDO-SE COM UMA NOVA GERAÇÃO BORN-DIGITAL",
+    "description": "USA A SQILL PARA OPTIMIZAR A EDIÇÃO DE VÍDEO E CRIAR NOVOS CONTEÚDOS PARA AS TUAS REDES SOCIAIS. INDICADO PARA LIGAS, CLUBES OU QUALQUER MARCA DESPORTIVA",
+    "hero": {
+      "image": "4biz_1.png", "width": "550", "height": "400"
+    },
+    "form": {
+      "fields": [
+        { "id": "Name", "label": "Nome", "type": "text" },
+        { "id": "About", "label": "Empresa", "type": "text" },
+        { "id": "Email", "label": "Email", "type": "email" },
+        { "id": "VAT", "label": "NIF", "type": "number" }
+      ],
+      "button": "Vamos falar?",
+      "feedback": {
+        "title": "Novo registo efectuado com sucesso",
+        "text": "Vamos enviar por email os próximos passos!"
+      }
+    }
+  },
+  "section1": {
+    "options": [
+      { "key": "1", "title": "CORTA VÍDEOS LONGOS EM VÁRIOS CLIPS", "description": "CORTA O VÍDEO EM SEGUNDOS E ENVIA PARA MOBILE COM QUALIDADE ORIGINAL COM A NOSSA FERRAMENTA SEND2SQILL VIA LINK OU UPLOAD", "image": "4biz_1.png", "width": "550", "height": "400" },
+      { "key": "2", "title": "EDITA VÍDEOS COM RAPIDEZ E SIMPLICIDADE", "description": "TRANSFORMA A EXPERIÊNCIA HORIZONTAL EM VERTICAL E USA EFEITOS PARA VÍDEO DE DESPORTO DE FORMA ILIMITADA", "image": "4biz_2.png", "width": "470", "height": "480" },
+      { "key": "3", "title": "USA OS NOSSOS EFEITOS PARA DESPORTOS DE FORMA ILIMITADA", "description": "", "image": "4biz_3.png", "width": "470", "height": "480" },
+      { "key": "4", "title": "FAZ DOWNLOAD OU PARTILHA DIRETAMENTE NAS REDES SOCIAIS", "description": "", "image": "4biz_4.png", "width": "470", "height": "480" }
+    ]
+  },
+  "section2": {
+    "title": "PORQUÊ USAR A SQILL 4 BUSINESS?",
+    "options": [
+      { "description": "POTENCIAÇÃO DE CRIATIVIDADE E PERSONALIDADE NA CRIAÇÃO DE CONTEÚDO", "image": "icon_create.png" },
+      { "description": "PREÇO MUITO ACESSÍVEL FACE A QUALQUER SUBSTITUTO DE MERCADO", "image": "icon_euro.png" },
+      { "description": "EDIÇÃO DE VÍDEO SIMPLES EM MOBILE POR QUALQUER PESSOA", "image": "icon_edit.png" }
+    ],
+    "subsection": {
+      "title": "E ainda…",
+      "options": [
+        { "label": "PROCESSO DE SIGNUP IMEDIATO" },
+        { "label": "ACESSO À BASE DE DADOS DOS ATLETAS" },
+        { "label": "UTILIZAÇÃO DE VÁRIOS PERFIS FINDER PREMIUM" }
+      ],
+      "form": {
+        "fields": [
+          { "label": "Nome", "type": "text" },
+          { "label": "Empresa", "type": "text" },
+          { "label": "NIF", "type": "number" }
+        ],
+        "button": "Sabe mais",
+        "feedback": {
+          "title": "Novo registo efectuado com sucesso",
+          "text": "Vamos enviar por email os próximos passos!"
+        }
+      }
+    }
+  }
+}

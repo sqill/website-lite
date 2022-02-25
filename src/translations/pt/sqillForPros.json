@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "sqill | sqill 4 pros",
+    "description": "",
+    "keywords": ""
+  },
+  "header": {
+    "title": "sqill 4 pros",
+    "subtitle": "ÉS ATLETA PROFISSIONAL E QUERES O MELHOR SERVIÇO DE VÍDEO?",
+    "description": "DISPONIBILIZAMOS UM SERVIÇO PERSONALIZADO DE CRIAÇÃO E EDIÇÃO DE VÍDEOS DE JOGO COM STORYTELLING",
+    "form": {
+      "fields": [
+        { "id": "Name", "label": "Nome", "type": "text" },
+        { "id": "About", "label": "Desporto", "type": "text" },
+        { "id": "Email", "label": "Email", "type": "email" },
+        { "id": "Phone", "label": "Telemóvel", "type": "number" }
+      ],
+      "button": "Vamos falar?",
+      "feedback": {
+        "title": "Novo registo efectuado com sucesso",
+        "text": "Vamos enviar por email os próximos passos!"
+      }
+    }
+  }
+}

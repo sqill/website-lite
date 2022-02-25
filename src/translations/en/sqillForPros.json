@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "sqill | sqill 4 pros",
+    "description": "",
+    "keywords": ""
+  },
+  "header": {
+    "title": "sqill 4 pros",
+    "subtitle": "Are you a professional athlete that wants the best video service available?",
+    "description": "We deliver a personalized service of creation and edition of game moments together with storytelling support.",
+    "form": {
+      "fields": [
+        { "id": "Name", "label": "Name", "type": "text" },
+        { "id": "About", "label": "Sport", "type": "text" },
+        { "id": "Email", "label": "Email", "type": "email" },
+        { "id": "Phone", "label": "Phone Number", "type": "number" }
+      ],
+      "button": "Let's talk",
+      "feedback": {
+        "title": "New registration submitted with success.",
+        "text": "We will send you an email with the next steps"
+      }
+    }
+  }
+}

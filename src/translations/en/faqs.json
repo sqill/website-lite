@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "sqill | FAQs",
+    "description": "",
+    "keywords": ""
+  },
+  "faqs": {
+    "title": "Do you have any questions about sqill?",
+    "options": [
+      {
+        "label": "I'm an athlete. Why should I download sqill?",
+        "content": "<p>There are numerous reasons and functionalities, but above all:</p><ul><li>To transform your sports videos into amazing content that you can share on your social media, showing the artist that you are in and outside the field</li><li>to build your online video portfolio: sqill is the best option to have an updated profile with all your historical data available to any agent, scout, coach, and brand check</li><li>To participate in challenges promoted by sports brands and have the opportunity of winning many prizes</li><li>and much more (you may expect fresh news in a near future)</li></ul>"
+      },
+      {
+        "label": "What video edition tools are available?",
+        "content": "sqill has an advanced video editor for mobile. Bring your game records (or training videos) to a whole new level. Our dynamic zoom allows you to transform a horizontal shaped video into a mobile one following only the place of action. Replay in slow motion? Of course, we have it. You may also use our spotlight option to identify yourself. Or if you prefer something funnier: why not change the ball with a burger? Or why not cause an explosion, after you score a great goal? We are launching new effects and other video functionalities every week. And the best thing is that we created a video editor easy to use by any person - with the same simplicity that you add a filter on Instagram, you create motion effect on sqill."
+      },
+      {
+        "label": "What is the type of athlete that should use sqill?",
+        "content": "Any athlete that wants to get more visibility in this digital era. You can use any type of videos: from your competitions, trainings, or plays with friends. We want to guarantee that the art that you perform on grass, asphalt, clay, or water is transformed into great content to be shared in your social media. Deep down, any athlete whose ambition is to become a digital artist."
+      },
+      {
+        "label": "What sports are available?",
+        "content": "At the moment, we have more than 20 different sports: Football, Basketball, Padel, Rugby, Gymnastics, Volleyball, Handball, Golf, Roller Hockey, Tennis, Surf, Skateboard, Futsal, American Football, Motorcycling, Table Tennis, Cycling, Jiu-jitsu, Wrestling, Judo, Boxe, Karate, Taekwondo, and Capoeira. Do you want to suggest a new sport? We are always open to new suggestions!"
+      },
+      {
+        "label": "Where is sqill available?",
+        "content": "For now, sqill is only available in Portugal and Brazil. Still in this year, we will expand to several new countries."
+      },
+      {
+        "label": "How do I pay to use sqill?",
+        "content": "Downloading sqill is free. Any athlete can create his profile and upload their videos. However, the basic profile has a monthly limit of videos that can be edited. It will cost 5€ per month, to upgrade your profile to premium."
+      },
+      {
+        "label": "Which videos will appear in the feed  “FOR YOU”?",
+        "content": "Each user will have a personalized feed, according to their goals and preferred sports. Our algorithm guarantees that the most suitable videos and athletes are presented to you. The algorithm has into account, among others: your location, your sports settings, the reviews by the fans, etc."
+      },
+      {
+        "label": "I love sports, but I am not an athlete. Is sqill useful to me?",
+        "content": "Of course. Imagine a Tiktok composed only of sports videos. Do you see anything funnier than that, to occupy your free time? You can interact and rate any video available - helping us to rank the best videos and athletes on the platform."
+      }
+    ]
+  }
+}
