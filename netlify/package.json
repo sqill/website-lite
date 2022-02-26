@@ -1,0 +1,11 @@
+{
+  "name": "netlify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "airtable": "^0.11.2",
+    "airtable-plus": "^1.0.4",
+    "node-fetch": "^3.2.0"
+  }
+}
