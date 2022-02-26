@@ -8,17 +8,60 @@ import constants from '@sqill/utils/constants';
 
 import Layout from '@sqill/components/layout';
 
-import { Section, Wrapper, H1, H2, SquareDiv, ButtonWatch, StoreButtons, SportsDiv, Div, Ol, Li } from '@sqill/components/pages/home.styles';
+import { Tabs, Tab, Label, H1 as FaqsH1, Div as FaqsDiv } from '@sqill/components/pages/faqs.styles';
+
+import {
+  Section,
+  SectionShadow,
+  SectionCompare,
+  SectionContent,
+  Wrapper,
+  CompareWrapper,
+  PhoneWrapper,
+  StepWrapper,
+  Bg,
+  BgCompare,
+  HeroImage,
+  ShadowImage,
+  StepImage,
+  H1,
+  H2,
+  SquareDiv,
+  ButtonWatch,
+  StoreButtons,
+  SportsDiv,
+} from '@sqill/components/pages/home.styles';
 
 const Home = () => {
   const { locale } = useRouter();
   const { t } = useTranslation('home');
   const meta = t('meta');
+  const hero = t('header.hero');
+  const section1 = t('section1');
+  const section2 = t('section2');
+  const section3 = t('section3');
+  const section4 = t('section4');
+
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    };
+
+    return array;
+  };
 
   return (
     <Layout {...meta}>
       <Section>
         <Wrapper>
+          <Bg>
+            {shuffleArray(hero).map(({ image, width, height }, idx) => (
+              <HeroImage key={idx}>
+                <Image src={`/images/home/${image}`} alt='' width={width} height={height} layout='fill' objectFit='cover' />
+              </HeroImage>
+            ))}
+          </Bg>
           <H1>
             <Image src='/images/logo_white_gradient.svg' alt='sqill logo' width={390} height={130} />
             <span>{t('header.subtitle')}</span>
@@ -36,76 +79,81 @@ const Home = () => {
           </StoreButtons>
           <SportsDiv>
             <div>{t('header.available')}</div>
-            <span><Image src='/images/icon_sports.png' alt='sqill logo' width={555} height={34} /></span>
+            <span><Image src='/images/icon_sports.png' alt='sqill logo' width={555} height={34} quality={100} /></span>
             <div>{t('header.andSports')}</div>
           </SportsDiv>
         </Wrapper>
       </Section>
+
+      <SectionShadow>
+        <Wrapper>
+          <h2>{t('section1.title')}</h2>
+          <ShadowImage>
+            <Image src={`/images/home/${section1.hero.image}`} alt='' width={section1.hero.width} height={section1.hero.height} quality={90} />
+          </ShadowImage>
+          <p>{t('section1.description')}</p>
+        </Wrapper>
+      </SectionShadow>
+
+      <SectionCompare>
+        <Wrapper>
+          <BgCompare>
+            <Image src={`/images/home/${section2.bg.image}`} alt='' width={section2.bg.width} height={section2.bg.height} quality={90} />
+          </BgCompare>
+          <h2>{t('section2.title')}</h2>
+          <CompareWrapper>
+            <div>
+              <PhoneWrapper>
+                <ul>
+                  {section2.without.options.map(({ label }, idx) => <li key={idx}>{label}</li>)}
+                </ul>
+                <h6>{section2.without.title}</h6>
+              </PhoneWrapper>
+              <Image src={`/images/home/${section2.without.image}`} alt='' width={section2.without.width} height={section2.without.height} quality={90} />
+            </div>
+            <div>
+              <PhoneWrapper>
+                <ul>
+                  {section2.with.options.map(({ label }, idx) => <li key={idx}>{label}</li>)}
+                </ul>
+                <h6>{section2.with.title}</h6>
+              </PhoneWrapper>
+              <Image src={`/images/home/${section2.with.image}`} alt='' width={section2.with.width} height={section2.with.height} quality={90} />
+            </div>
+          </CompareWrapper>
+        </Wrapper>
+      </SectionCompare>
+
+      <SectionContent>
+        <Wrapper>
+          {section3.options.map(({ key, title, description, image, width, height }, idx) => (
+            <StepWrapper key={idx} isOdd={idx%2}>
+              <div>
+                <h3><span>{key}</span>{title}</h3>
+                <div dangerouslySetInnerHTML={{__html: description }} />
+              </div>
+              <StepImage>
+                <Image src={`/images/home/${image}`} alt='' width={width} height={height} />
+              </StepImage>
+            </StepWrapper>
+          ))}
+        </Wrapper>
+
+        <Wrapper>
+          <FaqsH1>{t('section4.title')}</FaqsH1>
+          <Tabs>
+            {section4.options.map(({ label, content }, idx) => (
+              <Tab key={idx}>
+                <input type='radio' id={idx} name='faqs' />
+                <Label htmlFor={idx}>{label}</Label>
+                <FaqsDiv dangerouslySetInnerHTML={{__html: content}} />
+              </Tab>
+            ))}
+          </Tabs>
+        </Wrapper>
+      </SectionContent>
     </Layout>
   );
-  // return (
-  //   <div className={styles.container}>
-  //     <Head>
-  //       <title>Create Next App</title>
-  //       <meta name="description" content="Generated by create next app" />
-  //       <link rel="icon" href="/favicon.ico" />
-  //     </Head>
-
-  //     <main className={styles.main}>
-  //       <h1 className={styles.title}>
-  //         Welcome to <a href="https://nextjs.org">Next.js!</a>
-  //       </h1>
-
-  //       <p className={styles.description}>
-  //         Get started by editing{' '}
-  //         <code className={styles.code}>pages/index.js</code>
-  //       </p>
-
-  //       <div className={styles.grid}>
-  //         <a href="https://nextjs.org/docs" className={styles.card}>
-  //           <h2>Documentation &rarr;</h2>
-  //           <p>Find in-depth information about Next.js features and API.</p>
-  //         </a>
-
-  //         <a href="https://nextjs.org/learn" className={styles.card}>
-  //           <h2>Learn &rarr;</h2>
-  //           <p>Learn about Next.js in an interactive course with quizzes!</p>
-  //         </a>
-
-  //         <a
-  //           href="https://github.com/vercel/next.js/tree/canary/examples"
-  //           className={styles.card}
-  //         >
-  //           <h2>Examples &rarr;</h2>
-  //           <p>Discover and deploy boilerplate example Next.js projects.</p>
-  //         </a>
-
-  //         <a
-  //           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-  //           className={styles.card}
-  //         >
-  //           <h2>Deploy &rarr;</h2>
-  //           <p>
-  //             Instantly deploy your Next.js site to a public URL with Vercel.
-  //           </p>
-  //         </a>
-  //       </div>
-  //     </main>
-
-  //     <footer className={styles.footer}>
-  //       <a
-  //         href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Powered by{' '}
-  //         <span className={styles.logo}>
-  //           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-  //         </span>
-  //       </a>
-  //     </footer>
-  //   </div>
-  // )
 };
 
 export const getStaticProps = async ({ locale }) => ({

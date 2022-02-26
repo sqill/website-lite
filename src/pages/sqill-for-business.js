@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import Layout from '@sqill/components/layout';
 
-import { Section, Wrapper, Hero, HeroContent, ImageWrapper, StepImage, StepWrapper, IconsWrapper, Hint, H1, H2, StyledH2, H3, Div } from '@sqill/components/pages/sqill-for-business.styles';
+import { Section, Wrapper, Hero, HeroContent, ImageWrapper, StepImage, StepWrapper, IconsWrapper, AndWrapper, Hint, H1, H2, StyledH2, H3, Div } from '@sqill/components/pages/sqill-for-business.styles';
 
 const SqillForBusiness = () => {
   const { t } = useTranslation('sqillForBusiness');
@@ -16,7 +16,7 @@ const SqillForBusiness = () => {
   return (
     <Layout {...meta}>
       <Section>
-        <Wrapper>
+        <Wrapper isFlex>
           <Hint>{t('header.hint')}</Hint>
         </Wrapper>
 
@@ -31,7 +31,7 @@ const SqillForBusiness = () => {
               <Div dangerouslySetInnerHTML={{__html: t('header.description')}} />
             </HeroContent>
             <ImageWrapper>
-              <Image src={`/images/${hero.image}`} alt='sqill logo' width={hero.width} height={hero.height} />
+              <Image src={`/images/4biz/${hero.image}`} alt='sqill logo' width={hero.width} height={hero.height} />
             </ImageWrapper>
           </Hero>
         </Wrapper>
@@ -44,7 +44,7 @@ const SqillForBusiness = () => {
                 <div dangerouslySetInnerHTML={{__html: description }} />
               </div>
               <StepImage>
-                <Image src={`/images/${image}`} alt='' width={width} height={height} />
+                <Image src={`/images/4biz/${image}`} alt='' width={width} height={height} />
               </StepImage>
             </StepWrapper>
           ))}
@@ -55,15 +55,17 @@ const SqillForBusiness = () => {
           <IconsWrapper>
             {section2.options.map(({ description, image, width, height }, idx) => (
               <div key={idx}>
-                <Image src={`/images/${image}`} alt='' width={width} height={height} />
+                <Image src={`/images/4biz/${image}`} alt='' width={width} height={height} />
                 <p>{description}</p>
               </div>
             ))}
           </IconsWrapper>
-          <div>
-            {section2.subsection.title}
-            {section2.subsection.options.map(({ label }, idx) => <div key={idx}>{label}</div>)}
-          </div>
+          <AndWrapper>
+            <p>{section2.subsection.title}</p>
+            <ul>
+              {section2.subsection.options.map(({ label }, idx) => <li key={idx}>{label}</li>)}
+            </ul>
+          </AndWrapper>
         </Wrapper>
       </Section>
     </Layout>

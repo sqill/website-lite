@@ -16,7 +16,8 @@ export const Section = styled('section')(() => ({
   },
 }));
 
-export const Wrapper = styled('div')(() => ({
+export const Wrapper = styled('div')((props) => ({
+  ...(props.isFlex && { display: 'flex' }),
   margin: 'auto',
   maxWidth: '80rem',
 }));
@@ -117,15 +118,33 @@ export const IconsWrapper = styled('div')(() => ({
   },
 }));
 
+export const AndWrapper = styled('div')(() => ({
+  textAlign: 'center',
+
+  p: {
+    ...typo.H2,
+    margin: '3rem 0',
+  },
+
+  'ul li': {
+    backgroundColor: colors.whiteA60,
+    borderRadius: '2rem',
+    listStyle: 'none',
+    margin: '0 auto 1rem',
+    maxWidth: '40rem',
+    padding: '0.2rem 2rem',
+    textTransform: 'uppercase',
+  },
+}));
+
 export const Hint = styled('div')(() => ({
   ...typo.H2,
   backgroundColor: colors.whiteA60,
   borderRadius: '2rem',
   color: colors.black,
-  marginLeft: '50%',
+  margin: '0 auto',
   padding: '1rem 3rem',
   textTransform: 'uppercase',
-  transform: 'translateX(-50%)',
 
   [breakpoints.extraSmallMedia]: {
     ...typo.H3,

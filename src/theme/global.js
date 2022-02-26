@@ -17,42 +17,42 @@ export const globalStyles = `
    * Default headings
    */
   h1 {
-    color: ${colors.textPrimary};
+    color: ${colors.black};
     font-size: 3.2rem;
     font-weight: ${weight.regular};
     line-height: 1.25;
   }
 
   h2 {
-    color: ${colors.textPrimary};
+    color: ${colors.black};
     font-size: 2.4rem;
     font-weight: ${weight.regular};
     line-height: 1.25;
   }
 
   h3 {
-    color: ${colors.textPrimary};
+    color: ${colors.black};
     font-size: 2rem;
     font-weight: ${weight.regular};
     line-height: 1.2;
   }
 
   h4 {
-    color: ${colors.textPrimary};
+    color: ${colors.black};
     font-size: 2rem;
     font-weight: ${weight.regular};
     line-height: 1.2;
   }
 
   h5 {
-    color: ${colors.textPrimary};
+    color: ${colors.black};
     font-size: 2rem;
     font-weight: ${weight.regular};
     line-height: 1.2;
   }
 
   h6 {
-    color: ${colors.textPrimary};
+    color: ${colors.black};
     font-size: 2rem;
     font-weight: ${weight.regular};
     line-height: 1.2;

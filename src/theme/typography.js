@@ -18,6 +18,12 @@ export const H1_S1 = {
   letterSpacing: '-0.02em',
 };
 
+export const H1_S2 = {
+  ...baseStyles('3rem', weight.extrabold, '3.6rem'),
+  fontStyle: 'italic',
+  letterSpacing: '-0.02em',
+};
+
 export const H2 = {
   ...baseStyles('2rem', weight.extrabold, '2.4rem'),
   fontStyle: 'italic',
