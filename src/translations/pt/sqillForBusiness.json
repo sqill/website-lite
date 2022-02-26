@@ -37,9 +37,9 @@
   "section2": {
     "title": "PORQUÊ USAR A SQILL 4 BUSINESS?",
     "options": [
-      { "description": "POTENCIAÇÃO DE CRIATIVIDADE E PERSONALIDADE NA CRIAÇÃO DE CONTEÚDO", "image": "icon_create.png" },
-      { "description": "PREÇO MUITO ACESSÍVEL FACE A QUALQUER SUBSTITUTO DE MERCADO", "image": "icon_euro.png" },
-      { "description": "EDIÇÃO DE VÍDEO SIMPLES EM MOBILE POR QUALQUER PESSOA", "image": "icon_edit.png" }
+      { "description": "POTENCIAÇÃO DE CRIATIVIDADE E PERSONALIDADE NA CRIAÇÃO DE CONTEÚDO", "image": "icon_create.png", "width": "100", "height": "104" },
+      { "description": "PREÇO MUITO ACESSÍVEL FACE A QUALQUER SUBSTITUTO DE MERCADO", "image": "icon_euro.png", "width": "100", "height": "100" },
+      { "description": "EDIÇÃO DE VÍDEO SIMPLES EM MOBILE POR QUALQUER PESSOA", "image": "icon_edit.png", "width": "102", "height": "102" }
     ],
     "subsection": {
       "title": "E ainda…",

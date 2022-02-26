@@ -78,7 +78,7 @@ export const globalStyles = `
     border: 0;
   }
 
-  li {
+  ul li {
     list-style: disc;
   }
 

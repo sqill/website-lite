@@ -14,3 +14,5 @@ export const green3 = '#68D4A4';
 export const brand = '#28D8A1';
 
 export const red = '#E93A5A';
+
+export const shadow = '0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2)';

@@ -21,19 +21,117 @@ export const Wrapper = styled('div')(() => ({
   maxWidth: '80rem',
 }));
 
-export const ImageWrapper = styled('div')(() => ({
-  marginBottom: '-5%',
+export const Hero = styled('div')(() => ({
+  display: 'flex',
   marginLeft: '50%',
+  marginTop: '6rem',
   maxWidth: '100vw',
+  padding: '0 6rem',
+  textAlign: 'justify',
   transform: 'translateX(-50%)',
-  width: '135rem',
+  width: '140rem',
 
-  [breakpoints.lteSmallMedia]: {
-    maxWidth: '120vw',
+  '> div': {
+    flex: '1',
   },
 
   [breakpoints.extraSmallMedia]: {
-    maxWidth: '130vw',
+    flexDirection: 'column-reverse',
+    marginTop: '3rem',
+    padding: '0',
+    width: '100%',
+  },
+}));
+
+export const HeroContent = styled('div')(() => ({
+  marginRight: '9rem',
+  maxWidth: '50rem',
+
+  [breakpoints.extraSmallMedia]: {
+    marginRight: '0',
+    maxWidth: '100%',
+  },
+}));
+
+export const ImageWrapper = styled('div')(() => ({
+  paddingTop: '6rem',
+
+  [breakpoints.extraSmallMedia]: {
+    padding: '0 0 3rem',
+  },
+}));
+
+export const StepImage = styled('div')(() => ({
+  padding: '0 3rem',
+  width: '55%',
+
+  [breakpoints.extraSmallMedia]: {
+    padding: '0 2rem',
+    width: '100%',
+  },
+}));
+
+export const StepWrapper = styled('div')((props) => ({
+  alignItems: 'center',
+  display: 'flex',
+  flexDirection: props.isOdd ? 'row' : 'row-reverse',
+  marginTop: '6rem',
+  justifyContent: 'space-between',
+  textAlign: 'center',
+  textTransform: 'uppercase',
+
+  '> div:first-child': {
+    maxWidth: '30rem',
+  },
+
+  [breakpoints.extraSmallMedia]: {
+    flexDirection: 'column-reverse',
+    padding: '0 1rem',
+  },
+}));
+
+export const IconsWrapper = styled('div')(() => ({
+  display: 'flex',
+  justifyContent: 'space-between',
+
+  '> div': {
+    alignItems: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    maxWidth: '20rem',
+    textAlign: 'center',
+  },
+
+  p: {
+    marginTop: '2rem',
+    textTransform: 'uppercase',
+  },
+
+  [breakpoints.extraSmallMedia]: {
+    flexDirection: 'column',
+    alignItems: 'center',
+
+    '> div': {
+      marginBottom: '3rem',
+    },
+  },
+}));
+
+export const Hint = styled('div')(() => ({
+  ...typo.H2,
+  backgroundColor: colors.whiteA60,
+  borderRadius: '2rem',
+  color: colors.black,
+  marginLeft: '50%',
+  padding: '1rem 3rem',
+  textTransform: 'uppercase',
+  transform: 'translateX(-50%)',
+
+  [breakpoints.extraSmallMedia]: {
+    ...typo.H3,
+    padding: '1rem',
+    textAlign: 'center',
+    width: '100%',
   },
 }));
 
@@ -41,21 +139,62 @@ export const H1 = styled('h1')(() => ({
   ...typo.H1_S1,
   alignItems: 'center',
   display: 'flex',
-  justifyContent: 'center',
-  marginBottom: '3rem',
-  textAlign: 'center',
+  margin: '0 0 3rem -1rem',
+
+  [breakpoints.extraSmallMedia]: {
+    ...typo.H2_S2,
+  },
 }));
 
 export const H2 = styled('h2')(() => ({
   ...typo.H2_S2,
-  margin: '0 auto',
-  maxWidth: '70rem',
+  textTransform: 'uppercase',
+
+  [breakpoints.extraSmallMedia]: {
+    ...typo.H2,
+  },
+}));
+
+export const StyledH2 = styled('h2')(() => ({
+  ...typo.H2_S2,
+  color: colors.green3,
+  fontStyle: 'italic',
+  margin: '6rem auto',
   textAlign: 'center',
+  textTransform: 'uppercase',
+
+  [breakpoints.extraSmallMedia]: {
+    ...typo.H2,
+  },
+}));
+
+export const H3 = styled('h3')(() => ({
+  ...typo.H1_S1,
+  color: colors.black,
+  display: 'inline-flex',
+  flexDirection: 'column',
+  marginBottom: '2rem',
+  textTransform: 'uppercase',
+
+  span: {
+    ...typo.H2_S2,
+    backgroundColor: colors.green3,
+    color: colors.white,
+    fontStyle: 'italic',
+  },
+
+  [breakpoints.extraSmallMedia]: {
+    ...typo.H1,
+    marginBottom: '1rem',
+
+    span: {
+      ...typo.H2,
+    },
+  },
 }));
 
 export const Div = styled('div')(() => ({
   ...typo.P_S1_R,
-  margin: '2rem auto 6rem',
-  maxWidth: '55rem',
-  textAlign: 'center',
+  margin: '3rem 0',
+  textTransform: 'uppercase',
 }));
