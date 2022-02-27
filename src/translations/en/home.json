@@ -14,7 +14,10 @@
     "title": "sqill",
     "subtitle": "the video app for athletes",
     "description": "We give athletes the video tools to create amazing sports content, helping them get discovered by fans, finders and brands.",
-    "watch": "Watch product video",
+    "watch": {
+      "label": "Watch product video",
+      "url": "https://youtu.be/kN7f6NMfkyE"
+    },
     "download": "Download the app for free",
     "available": "Available to",
     "andSports": "and twelve more sports"

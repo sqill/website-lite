@@ -18,6 +18,11 @@ const commonSectionStyles = {
 
 export const Section = styled('section')(() => ({
   ...commonSectionStyles,
+
+  [breakpoints.extraSmallMedia]: {
+    minHeight: 'calc(100vh - 9rem)',
+    padding: '3rem 2rem 6rem',
+  },
 }));
 
 export const SectionShadow = styled('section')(() => ({
@@ -62,7 +67,7 @@ export const SectionCompare = styled('section')(() => ({
   },
 
   '&:after': {
-    backgroundImage: `linear-gradient(${colors.green2}, ${colors.green0})`,
+    backgroundImage: `linear-gradient(${colors.brand}, ${colors.green0})`,
     left: '50vw',
   },
 
@@ -77,7 +82,7 @@ export const SectionCompare = styled('section')(() => ({
 
 export const SectionContent = styled('section')(() => ({
   ...commonSectionStyles,
-  backgroundImage: `linear-gradient(${colors.green2}, ${colors.green0}, ${colors.green2}, ${colors.green0}, ${colors.green2})`,
+  backgroundImage: `linear-gradient(${colors.brand}, ${colors.green0}, ${colors.brand}, ${colors.green0}, ${colors.brand})`,
 }));
 
 export const Wrapper = styled('div')(() => ({
@@ -212,6 +217,8 @@ export const Bg = styled('div')(() => ({
 
   [breakpoints.lteSmallMedia]: {
     flexWrap: 'wrap',
+    height: 'calc(100% + 5rem)',
+    top: '9rem',
   },
 }));
 
@@ -264,16 +271,24 @@ export const H1 = styled('h1')(() => ({
   color: colors.white,
   display: 'flex',
   flexDirection: 'column',
+  position: 'relative',
   textAlign: 'center',
 
   span: {
     marginTop: '2rem',
   },
+
+  [breakpoints.extraSmallMedia]: {
+    '> span:first-child': {
+      left: '10%',
+      maxWidth: '80% !important',
+    },
+  },
 }));
 
 export const H2 = styled('h2')(() => ({
   ...typo.H2,
-  color: colors.green2,
+  color: colors.brand,
   position: 'relative',
   textAlign: 'center',
 }));
@@ -306,6 +321,10 @@ export const SquareDiv = styled('div')(() => ({
     borderRight: `0.5rem solid ${colors.whiteA60}`,
     right: '-1rem',
   },
+
+  [breakpoints.extraSmallMedia]: {
+    transform: 'scale(0.9)',
+  },
 }));
 
 export const ButtonWatch = styled('div')(() => ({
@@ -313,12 +332,14 @@ export const ButtonWatch = styled('div')(() => ({
   backgroundColor: colors.whiteA60,
   borderRadius: '1rem',
   color: colors.black,
+  cursor: 'pointer',
   display: 'inline-flex',
   justifyContent: 'center',
   margin: '6rem 0 6rem 50%',
   padding: '0.5rem 1.5rem',
   textTransform: 'uppercase',
   transform: 'translateX(-50%)',
+  width: 'max-content',
 
   '&:before': {
     borderColor: `transparent transparent transparent ${colors.black}`,
@@ -329,6 +350,10 @@ export const ButtonWatch = styled('div')(() => ({
     marginRight: '-0.5rem',
     marginTop: '-0.1rem',
     width: '1.6rem',
+  },
+
+  '&:focus, &:hover': {
+    backgroundColor: colors.white,
   },
 }));
 
@@ -348,7 +373,7 @@ export const StoreButtons = styled('div')(() => ({
 export const SportsDiv = styled('div')(() => ({
   ...typo.P_EB,
   alignItems: 'center',
-  color: colors.green2,
+  color: colors.brand,
   display: 'flex',
   justifyContent: 'space-between',
   marginLeft: '50%',

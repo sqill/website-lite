@@ -51,6 +51,10 @@ const Home = () => {
     return array;
   };
 
+  const handleOnWatchClick = (url) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <Layout {...meta}>
       <Section>
@@ -67,7 +71,7 @@ const Home = () => {
             <span>{t('header.subtitle')}</span>
           </H1>
           <SquareDiv dangerouslySetInnerHTML={{__html: t('header.description')}} />
-          <ButtonWatch>{t('header.watch')}</ButtonWatch>
+          <ButtonWatch onClick={() => handleOnWatchClick(t('header.watch.url'))}>{t('header.watch.label')}</ButtonWatch>
           <H2>{t('header.download')}</H2>
           <StoreButtons>
             <Link href={constants.APP_STORE_URL}>

@@ -14,7 +14,10 @@
     "title": "sqill",
     "subtitle": "a app de vídeo dos atletas",
     "description": "damos ferramentas aos atletas para criar melhores vídeos de desporto, ajudando-os a serem descobertos por fâs, olheiros e marcas",
-    "watch": "Vê o nosso produto",
+    "watch": {
+      "label": "Vê o nosso produto",
+      "url": "https://youtu.be/Cyvo4SkBNXU"
+    },
     "download": "Faz o download  grátis da APP",
     "available": "Disponível para",
     "andSports": "... e mais 12 desportos!"

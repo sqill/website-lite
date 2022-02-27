@@ -29,9 +29,9 @@
   "section1": {
     "options": [
       { "key": "1", "title": "Cut long videos in several clips", "description": "Cut your video in seconds, and send it to your mobile with original quality, by using our tool “send2sqill” via a link or upload", "image": "4biz_1.png", "width": "550", "height": "400" },
-      { "key": "2", "title": "Edit your videos - fast and simple", "description": "Transform a horizontal experience into a vertical one and use our effects to enhance your sports videos.", "image": "4biz_2.png", "width": "470", "height": "480" },
-      { "key": "3", "title": "Use our effects and animations with no limitations", "description": "", "image": "4biz_3.png", "width": "470", "height": "480" },
-      { "key": "4", "title": "Download and share directly into social media", "description": "", "image": "4biz_4.png", "width": "470", "height": "480" }
+      { "key": "2", "title": "Edit your videos - fast and simple", "description": "Transform your horizontal game videos into vertical videos, with an unique dynamic zoom feature. Perfectly suitable for reels and tiktok.", "image": "4biz_2.png", "width": "470", "height": "480" },
+      { "key": "3", "title": "Use our effects and animations with no limitations", "description": "Enhance your video quality with dozens of customized effects. Unlimited use.", "image": "4biz_3.png", "width": "470", "height": "480" },
+      { "key": "4", "title": "Download and share directly into social media", "description": "Save your video on your library to post later or share it directly on your social media.", "image": "4biz_4.png", "width": "470", "height": "480" }
     ]
   },
   "section2": {

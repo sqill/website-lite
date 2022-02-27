@@ -7,15 +7,19 @@ import * as typo from '@sqill/theme/typography';
 export const Div = styled('div')(() => ({
   ...typo.P_S2_R,
   backgroundColor: colors.black,
+  position: 'fixed',
+  top: '0',
+  width: '100vw',
+  zIndex: '10',
 
   a: {
-    color: colors.green2,
+    color: colors.brand,
     display: 'inline-flex',
     padding: '0 0.5rem',
     textDecoration: 'none',
 
     '&:focus, &:hover': {
-      color: colors.green1,
+      color: colors.brand1,
     },
   },
 }));

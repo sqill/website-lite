@@ -46,7 +46,7 @@ export const Hero = styled('div')(() => ({
 
 export const HeroContent = styled('div')(() => ({
   marginRight: '9rem',
-  maxWidth: '50rem',
+  maxWidth: '48rem',
 
   [breakpoints.extraSmallMedia]: {
     marginRight: '0',
@@ -159,6 +159,7 @@ export const H1 = styled('h1')(() => ({
   alignItems: 'center',
   display: 'flex',
   margin: '0 0 3rem -1rem',
+  textAlign: 'left',
 
   [breakpoints.extraSmallMedia]: {
     ...typo.H2_S2,
@@ -166,12 +167,8 @@ export const H1 = styled('h1')(() => ({
 }));
 
 export const H2 = styled('h2')(() => ({
-  ...typo.H2_S2,
+  ...typo.H2,
   textTransform: 'uppercase',
-
-  [breakpoints.extraSmallMedia]: {
-    ...typo.H2,
-  },
 }));
 
 export const StyledH2 = styled('h2')(() => ({
@@ -190,16 +187,20 @@ export const StyledH2 = styled('h2')(() => ({
 export const H3 = styled('h3')(() => ({
   ...typo.H1_S1,
   color: colors.black,
-  display: 'inline-flex',
-  flexDirection: 'column',
+  lineHeight: '70%',
   marginBottom: '2rem',
   textTransform: 'uppercase',
+
+  div: {
+    marginBottom: '1rem',
+  },
 
   span: {
     ...typo.H2_S2,
     backgroundColor: colors.green3,
     color: colors.white,
     fontStyle: 'italic',
+    lineHeight: '0',
   },
 
   [breakpoints.extraSmallMedia]: {
@@ -213,7 +214,7 @@ export const H3 = styled('h3')(() => ({
 }));
 
 export const Div = styled('div')(() => ({
-  ...typo.P_S1_R,
+  ...typo.P_R,
   margin: '3rem 0',
   textTransform: 'uppercase',
 }));

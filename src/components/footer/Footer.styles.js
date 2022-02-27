@@ -7,15 +7,15 @@ import * as typo from '@sqill/theme/typography';
 export const FooterWrapper = styled('footer')(() => ({
   ...typo.P_S3_R,
   backgroundColor: colors.black,
-  color: colors.gray1,
+  color: colors.whiteA60,
 
   a: {
     ...typo.P_S3_R,
-    color: colors.gray1,
+    color: colors.whiteA60,
     textDecoration: 'none',
 
     '&:focus, &:hover': {
-      color: colors.green1,
+      color: colors.brand1,
     },
   },
 }));
@@ -71,7 +71,7 @@ export const Div = styled('div')(() => ({
 
 export const H6 = styled('h6')(() => ({
   ...typo.P_S3_R,
-  color: colors.green1,
+  color: colors.brand,
 }));
 
 export const Copy = styled('div')(() => ({

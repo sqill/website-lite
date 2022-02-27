@@ -29,9 +29,9 @@
   "section1": {
     "options": [
       { "key": "1", "title": "CORTA VÍDEOS LONGOS EM VÁRIOS CLIPS", "description": "CORTA O VÍDEO EM SEGUNDOS E ENVIA PARA MOBILE COM QUALIDADE ORIGINAL COM A NOSSA FERRAMENTA SEND2SQILL VIA LINK OU UPLOAD", "image": "4biz_1.png", "width": "550", "height": "400" },
-      { "key": "2", "title": "EDITA VÍDEOS COM RAPIDEZ E SIMPLICIDADE", "description": "TRANSFORMA A EXPERIÊNCIA HORIZONTAL EM VERTICAL E USA EFEITOS PARA VÍDEO DE DESPORTO DE FORMA ILIMITADA", "image": "4biz_2.png", "width": "470", "height": "480" },
-      { "key": "3", "title": "USA OS NOSSOS EFEITOS PARA DESPORTOS DE FORMA ILIMITADA", "description": "", "image": "4biz_3.png", "width": "470", "height": "480" },
-      { "key": "4", "title": "FAZ DOWNLOAD OU PARTILHA DIRETAMENTE NAS REDES SOCIAIS", "description": "", "image": "4biz_4.png", "width": "470", "height": "480" }
+      { "key": "2", "title": "EDITA VÍDEOS COM RAPIDEZ E SIMPLICIDADE", "description": "Transforma vídeos horizontais em vídeos verticais, com a ferramenta única de zoom dinâmico. Perfeito para adaptação ao reels ou tiktok.", "image": "4biz_2.png", "width": "470", "height": "480" },
+      { "key": "3", "title": "USA OS NOSSOS EFEITOS PARA DESPORTOS DE FORMA ILIMITADA", "description": "Melhora os teus vídeos com dezenas de efeitos personalizados. Utiliza de forma ilimitada em quantos vídeos quiseres.", "image": "4biz_3.png", "width": "470", "height": "480" },
+      { "key": "4", "title": "FAZ DOWNLOAD OU PARTILHA DIRETAMENTE NAS REDES SOCIAIS", "description": "Guarda o vídeo para publicar mais tarde ou partilha diretamente nas tuas redes sociais.", "image": "4biz_4.png", "width": "470", "height": "480" }
     ]
   },
   "section2": {

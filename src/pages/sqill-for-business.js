@@ -40,7 +40,7 @@ const SqillForBusiness = () => {
           {options.map(({ key, title, description, image, width, height }, idx) => (
             <StepWrapper key={idx} isOdd={idx%2}>
               <div>
-                <H3>{key}<span>{title}</span></H3>
+                <H3><div>{key}</div><span>{title}</span></H3>
                 <div dangerouslySetInnerHTML={{__html: description }} />
               </div>
               <StepImage>

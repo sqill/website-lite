@@ -74,7 +74,7 @@ export const H1 = styled('h1')(() => ({
 
 export const H2 = styled('h2')(() => ({
   ...typo.H2_S2,
-  color: colors.green2,
+  color: colors.brand1,
   fontStyle: 'italic',
   margin: '0',
   textAlign: 'center',
@@ -113,6 +113,6 @@ export const Div = styled('div')(() => ({
   },
 
   span: {
-    color: colors.green3,
+    color: colors.brand1,
   },
 }));

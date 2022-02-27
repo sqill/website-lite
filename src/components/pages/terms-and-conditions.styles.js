@@ -22,7 +22,7 @@ export const Wrapper = styled('div')(() => ({
 
 export const H1 = styled('h1')(() => ({
   ...typo.H2,
-  color: colors.green1,
+  color: colors.brand,
   marginBottom: '6rem',
   textAlign: 'center',
 }));

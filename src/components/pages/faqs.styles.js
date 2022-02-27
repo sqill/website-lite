@@ -6,7 +6,7 @@ import * as typo from '@sqill/theme/typography';
 
 export const Section = styled('section')(() => ({
   ...typo.P_R,
-  backgroundImage: `linear-gradient(${colors.green0}, ${colors.green3})`,
+  backgroundImage: `linear-gradient(${colors.green0}, ${colors.brand})`,
   color: colors.white,
   padding: '6rem 2rem 10rem',
 
@@ -20,7 +20,10 @@ export const Wrapper = styled('div')(() => ({
   maxWidth: '80rem',
 }));
 
-export const Tabs = styled('div')(() => ({}));
+export const Tabs = styled('div')(() => ({
+  margin: '0 auto',
+  maxWidth: '60rem',
+}));
 
 export const Tab = styled('div')(() => ({
   backgroundColor: colors.whiteA60,
