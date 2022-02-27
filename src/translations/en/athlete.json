@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "sqill | athlete",
+    "description": "",
+    "keywords": ""
+  },
+  "cta": [
+    { "store": "play", "label": "Download the app for free", "url": "PLAY_STORE_URL" },
+    { "store": "app", "label": "Download the app for free", "url": "APP_STORE_URL" }
+  ],
+  "section1": {
+    "options": [
+      { "key": "Make", "title": "your sports videos fit for Mobile", "description": "Use our tools such as Dynamic Zoom or Replay in Slow motion to improve the quality of your videos and shape them to be used in TikTok or as Instagram Reels.", "image": "home_1.png", "width": "474", "height": "418" },
+      { "key": "Use", "title": "the best sports effects and share them on your social media!", "description": "Replace the ball with a Fireball? Score a goal and cause an explosion? Give life to your videos! Show the artist that you are in and outside the field.", "image": "home_2.png", "width": "600", "height": "430" },
+      { "key": "Show", "title": "your profile!", "description": "Create your Athlete profile and share with the world of sports your abilities and off-pitch characteristics", "image": "home_3.png", "width": "474", "height": "418" },
+      { "key": "Build", "title": "your portfolio of sqills ", "description": "sqills are small videos of your performances. Organize and eternalize your career highlights.", "image": "home_4.png", "width": "474", "height": "418" },
+      { "key": "Be evaluated", "title": "by fans and be discovered by agents, scouts, coaches, and brands.", "description": "The best sqills will appear in the feed and be seen by fans on a global scale. Use sqill to expose your talent and be reached by the world of sports.", "image": "home_5.png", "width": "500", "height": "458" }
+    ]
+  }
+}

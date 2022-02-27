@@ -1,7 +1,7 @@
 export default {
   HOME: '/',
   ABOUT: '/about',
-  ATHLETE: '/',
+  ATHLETE: '/athlete',
   FAQS: '/faqs',
   CONTACTS: '/contacts',
   BLOG: '/',

@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "sqill | atleta",
+    "description": "",
+    "keywords": ""
+  },
+  "cta": [
+    { "store": "play", "label": "Faz o download grátis", "url": "PLAY_STORE_URL" },
+    { "store": "app", "label": "Faz o download grátis", "url": "APP_STORE_URL" }
+  ],
+  "section1": {
+    "options": [
+      { "key": "Transforma", "title": "os teus vídeos de desporto para mobile", "description": "USA FERRAMENTAS COMO O NOSSO DYNAMIC ZOOM OU O REPLAY EM SLOW MOTION PARA MELHORARES A QUALIDADE DOS TEUS VÍDEOS E ADAPTARES A TIKTOK OU A INSTAGRAM REELS", "image": "home_1.png", "width": "474", "height": "418" },
+      { "key": "Usa", "title": "os melhores efeitos de desporto e partilha nas tuas redes sociais", "description": "TROCAR A BOLA POR UMA ESFERA EM FOGO? MARCAR UM GOLO E EXPLODIR COM A BALIZA? DÁ VIDA AOS TEUS VÍDEOS. MOSTRA QUE ÉS ARTISTA DENTRO E FORA DE CAMPO.", "image": "home_2.png", "width": "600", "height": "430" },
+      { "key": "Exibe", "title": "o teu perfil", "description": "CRIA O TEU PERFIL DE ATLETA, PARTILHANDO COM O MUNDO DO DESPORTO AS TUAS CARATERÍSTICAS DENTRO E FORA DE CAMPO", "image": "home_3.png", "width": "474", "height": "418" },
+      { "key": "Constrói", "title": "o teu portfólio de sqills", "description": "AS SQILLS SÃO VÍDEOS DE PEQUENO FORMATO DE MOMENTOS DE JOGO. ORGANIZA E ETERNIZA OS HIGHLIGHTS DA TUA CARREIRA", "image": "home_4.png", "width": "474", "height": "418" },
+      { "key": "Sê avaliado", "title": "pelos adeptos e descoberto por agentes, olheiros, treinadores e marcas", "description": "AS MELHORES SQILLS VÃO PARA O FEED E SÃO AVALIADAS POR ADEPTOS. USA A SQILL PARA TE EXPORES E SERES CONTACTADO PELO MUNDO DO DESPORTO", "image": "home_5.png", "width": "500", "height": "458" }
+    ]
+  }
+}

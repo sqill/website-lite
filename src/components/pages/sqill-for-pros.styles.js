@@ -49,8 +49,9 @@ export const H1 = styled('h1')(() => ({
 export const H2 = styled('h2')(() => ({
   ...typo.H2_S2,
   margin: '0 auto',
-  maxWidth: '70rem',
+  maxWidth: '60rem',
   textAlign: 'center',
+  textTransform: 'uppercase',
 }));
 
 export const Div = styled('div')(() => ({
@@ -58,4 +59,5 @@ export const Div = styled('div')(() => ({
   margin: '2rem auto 6rem',
   maxWidth: '55rem',
   textAlign: 'center',
+  textTransform: 'uppercase',
 }));
