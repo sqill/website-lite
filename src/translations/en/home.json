@@ -6,10 +6,10 @@
   },
   "header": {
     "hero": [
-      { "image": "hero1.png", "width": "480", "height": "1080" },
-      { "image": "hero2.png", "width": "480", "height": "1080" },
-      { "image": "hero3.png", "width": "480", "height": "1080" },
-      { "image": "hero4.png", "width": "480", "height": "1080" }
+      { "video": "home-futebol.mp4", "image": "hero1.png", "width": "480", "height": "1080" },
+      { "video": "home-basket.mp4", "image": "hero2.png", "width": "480", "height": "1080" },
+      { "video": "home-padel.mp4", "image": "hero3.png", "width": "480", "height": "1080" },
+      { "video": "home-rugby.mp4", "image": "hero4.png", "width": "480", "height": "1080" }
     ],
     "title": "sqill",
     "subtitle": "the video app for athletes",
@@ -38,6 +38,7 @@
     },
     "without": {
       "title": "Video without sqill",
+      "video": "without-sqill.mp4",
       "image": "home_phone_1.png",
       "width": "311",
       "height": "632",
@@ -48,6 +49,7 @@
     },
     "with": {
       "title": "Video with sqill",
+      "video": "with-sqill.mp4",
       "image": "home_phone_2.png",
       "width": "309",
       "height": "634",

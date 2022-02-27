@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import Layout from '@sqill/components/layout';
 
-import { Section, Wrapper, ImageWrapper, H1, H2, Div } from '@sqill/components/pages/sqill-for-pros.styles';
+import { Section, Wrapper, ImageWrapper, H1, H2, VideoWrapper, Div } from '@sqill/components/pages/sqill-for-pros.styles';
 
 const SqillForPros = () => {
   const { t } = useTranslation('sqillForPros');
@@ -20,6 +20,9 @@ const SqillForPros = () => {
           </H1>
           <ImageWrapper>
             <Image src='/images/sqill4props_cta_image.png' alt='sqill logo' width={1350} height={590} />
+            <VideoWrapper>
+              <video autoPlay playsInline loop muted src='/videos/4pros.mp4' />
+            </VideoWrapper>
           </ImageWrapper>
           <H2>{t('header.subtitle')}</H2>
           <Div dangerouslySetInnerHTML={{__html: t('header.description')}} />

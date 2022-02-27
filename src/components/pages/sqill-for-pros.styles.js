@@ -25,6 +25,7 @@ export const ImageWrapper = styled('div')(() => ({
   marginBottom: '-5%',
   marginLeft: '50%',
   maxWidth: '100vw',
+  position: 'relative',
   transform: 'translateX(-50%)',
   width: '135rem',
 
@@ -54,6 +55,20 @@ export const H2 = styled('h2')(() => ({
   textAlign: 'center',
   textShadow: colors.shadow,
   textTransform: 'uppercase',
+}));
+
+export const VideoWrapper = styled('div')(() => ({
+  borderRadius: '1rem',
+  display: 'flex',
+  left: '15%',
+  overflow: 'hidden',
+  position: 'absolute',
+  top: '-0.5%',
+  width: '20%',
+
+  video: {
+    width: '100%',
+  },
 }));
 
 export const Div = styled('div')(() => ({

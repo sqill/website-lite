@@ -20,6 +20,7 @@ import {
   CompareWrapper,
   PhoneWrapper,
   StepWrapper,
+  VideoWrapper,
   Bg,
   BgCompare,
   HeroImage,
@@ -63,9 +64,17 @@ const Home = () => {
       <Section>
         <Wrapper>
           <Bg>
-            {shuffleArray(hero).map(({ image, width, height }, idx) => (
+            {shuffleArray(hero).map(({ video, image, width, height }, idx) => (
               <HeroImage key={idx}>
-                <Image src={`/images/home/${image}`} alt='' width={width} height={height} layout='fill' objectFit='cover' />
+                {/* <Image src={`/images/home/${image}`} alt='' width={width} height={height} layout='fill' objectFit='cover' /> */}
+                <video
+                  autoPlay
+                  playsInline
+                  loop
+                  muted
+                  src={`/videos/${video}`}
+                  poster={`/images/home/${image}`}
+                />
               </HeroImage>
             ))}
           </Bg>
@@ -116,7 +125,15 @@ const Home = () => {
                 </ul>
                 <h6>{section2.without.title}</h6>
               </PhoneWrapper>
-              <Image src={`/images/home/${section2.without.image}`} alt='' width={section2.without.width} height={section2.without.height} quality={90} />
+              <VideoWrapper>
+                <video
+                  autoPlay
+                  playsInline
+                  loop
+                  muted
+                  src={`/videos/${section2.without.video}`}
+                />
+              </VideoWrapper>
             </div>
             <div>
               <PhoneWrapper showTicks>
@@ -125,7 +142,15 @@ const Home = () => {
                 </ul>
                 <h6>{section2.with.title}</h6>
               </PhoneWrapper>
-              <Image src={`/images/home/${section2.with.image}`} alt='' width={section2.with.width} height={section2.with.height} quality={90} />
+              <VideoWrapper>
+                <video
+                  autoPlay
+                  playsInline
+                  loop
+                  muted
+                  src={`/videos/${section2.with.video}`}
+                />
+              </VideoWrapper>
             </div>
           </CompareWrapper>
         </Wrapper>

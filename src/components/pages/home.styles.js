@@ -7,9 +7,10 @@ import * as typo from '@sqill/theme/typography';
 const commonSectionStyles = {
   ...typo.P_R,
   color: colors.white,
-  minHeight: 'calc(100vh - 6rem)',
+  minHeight: 'calc(100% - 6rem)',
   overflow: 'hidden',
   padding: '6rem 2rem 10rem',
+  position: 'relative',
 
   [breakpoints.smallMedia]: {
     padding: '6rem 4rem 10rem',
@@ -20,7 +21,7 @@ export const Section = styled('section')(() => ({
   ...commonSectionStyles,
 
   [breakpoints.extraSmallMedia]: {
-    minHeight: 'calc(100vh - 9rem)',
+    minHeight: 'calc(100% - 9rem)',
     padding: '3rem 2rem 6rem',
   },
 }));
@@ -102,16 +103,17 @@ export const CompareWrapper = styled('div')(() => ({
   '> div': {
     backgroundColor: colors.blackA50,
     display: 'flex',
+    maxHeight: '50rem',
     width: 'calc(50% - 4rem)',
 
     '&:first-child': {
       alignContent: 'flex-end',
-      borderRadius: '2rem 10rem 10rem 2rem',
+      borderRadius: '2rem',
       textAlign: 'right',
     },
 
     '&:last-child': {
-      borderRadius: '10rem 2rem 2rem 10rem',
+      borderRadius: '2rem',
       flexDirection: 'row-reverse',
     },
   },
@@ -208,13 +210,25 @@ export const StepWrapper = styled('div')((props) => ({
   },
 }));
 
+export const VideoWrapper = styled('div')(() => ({
+  borderRadius: '1rem',
+  display: 'flex',
+  overflow: 'hidden',
+  position: 'relative',
+  width: '50%',
+
+  video: {
+    height: '100%',
+  },
+}));
+
 export const Bg = styled('div')(() => ({
   display: 'flex',
   left: 0,
-  height: 'calc(100vh - 4rem)',
+  height: '100%',
   pointerEvents: 'none',
   position: 'absolute',
-  top: '6rem',
+  top: '0',
   width: '100vw',
 
   '&:after': {
@@ -228,8 +242,6 @@ export const Bg = styled('div')(() => ({
 
   [breakpoints.lteSmallMedia]: {
     flexWrap: 'wrap',
-    height: 'calc(100% + 5rem)',
-    top: '9rem',
   },
 }));
 
@@ -249,15 +261,24 @@ export const BgCompare = styled('div')(() => ({
 }));
 
 export const HeroImage = styled('div')(() => ({
+  height: '100%',
+  overflow: 'hidden',
   position: 'relative',
   width: '25%',
+
+  video: {
+    height: '100%',
+    marginLeft: '50%',
+    position: 'relative',
+    transform: 'translateX(-50%)',
+  },
 
   [breakpoints.lteSmallMedia]: {
     display: 'none',
     width: '50%',
 
     '&:first-child, &:last-child': {
-      display: 'block'
+      display: 'block',
     },
   },
 }));
