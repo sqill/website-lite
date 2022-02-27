@@ -22,10 +22,6 @@
     "available": "Disponível para",
     "andSports": "... e mais 12 desportos!"
   },
-  "cta": [
-    { "store": "play", "label": "Faz o download grátis", "url": "PLAY_STORE_URL" },
-    { "store": "app", "label": "Faz o download grátis", "url": "APP_STORE_URL" }
-  ],
   "section1": {
     "title": "Vais ficar na sombra?",
     "description": "Torna o artista que és em campo, num fenómeno das redes sociais",

@@ -22,10 +22,6 @@
     "available": "Available to",
     "andSports": "and twelve more sports"
   },
-  "cta": [
-    { "store": "play", "label": "Download the app for free", "url": "PLAY_STORE_URL" },
-    { "store": "app", "label": "Download the app for free", "url": "APP_STORE_URL" }
-  ],
   "section1": {
     "title": "Will you stay in the shadow?",
     "description": "Transform the artist that you are inside the field into a phenomenon on social media.",

@@ -130,7 +130,7 @@ export const CompareWrapper = styled('div')(() => ({
   },
 }));
 
-export const PhoneWrapper = styled('div')(() => ({
+export const PhoneWrapper = styled('div')((props) => ({
   display: 'flex',
   flexDirection: 'column',
   flex: '1 1 50%',
@@ -140,9 +140,20 @@ export const PhoneWrapper = styled('div')(() => ({
   textTransform: 'uppercase',
 
   'ul li': {
-    ...typo.P_S3_R,
+    ...typo.P_S3_M,
     listStyle: 'none',
     marginBottom: '0.5rem',
+
+    ...(props.showTicks && {
+      marginBottom: '0.2rem',
+
+      '&:before': {
+        ...typo.P_R,
+        color: colors.brand1,
+        content: '"\\2713"',
+        marginRight: '0.5rem',
+      },
+    }),
   },
 
   h6: {

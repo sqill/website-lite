@@ -1,0 +1,6 @@
+{
+  "cta": [
+    { "store": "play", "label": "Download the app for free", "url": "PLAY_STORE_URL" },
+    { "store": "app", "label": "Download the app for free", "url": "APP_STORE_URL" }
+  ]
+}

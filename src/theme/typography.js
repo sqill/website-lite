@@ -65,3 +65,7 @@ export const P_S2_M = {
 export const P_S3_R = {
   ...baseStyles('1.1rem', weight.regular, '1.7rem'),
 };
+
+export const P_S3_M = {
+  ...baseStyles('1.1rem', weight.medium, '1.7rem'),
+};

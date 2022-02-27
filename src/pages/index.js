@@ -7,6 +7,7 @@ import Link from 'next/link';
 import constants from '@sqill/utils/constants';
 
 import Layout from '@sqill/components/layout';
+import FloatingCTA from '@sqill/components/floating-cta';
 
 import { Tabs, Tab, Label, H1 as FaqsH1, Div as FaqsDiv } from '@sqill/components/pages/faqs.styles';
 
@@ -57,6 +58,8 @@ const Home = () => {
 
   return (
     <Layout {...meta}>
+      <FloatingCTA />
+
       <Section>
         <Wrapper>
           <Bg>
@@ -116,7 +119,7 @@ const Home = () => {
               <Image src={`/images/home/${section2.without.image}`} alt='' width={section2.without.width} height={section2.without.height} quality={90} />
             </div>
             <div>
-              <PhoneWrapper>
+              <PhoneWrapper showTicks>
                 <ul>
                   {section2.with.options.map(({ label }, idx) => <li key={idx}>{label}</li>)}
                 </ul>
@@ -162,7 +165,7 @@ const Home = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...await serverSideTranslations(locale, ['menu', 'footer', 'home']),
+    ...await serverSideTranslations(locale, ['menu', 'footer', 'home', 'floatingCTA']),
   },
 });
 
