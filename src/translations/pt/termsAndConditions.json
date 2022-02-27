@@ -7,12 +7,119 @@
   "header": {
     "title": "Termos e Condições",
     "options": [
-      { "title": "", "text": "" },
-      { "title": "", "text": "" },
-      { "title": "", "text": "" },
-      { "title": "", "text": "" },
-      { "title": "", "text": "" },
-      { "title": "", "text": "" }
+      { "text": "<p>These Terms and Conditions govern the access and use of the <b>Sqill</b> Application (hereinafter &quot;App&quot;), which belongs to Success Invitation, Lda a company registered in Coimbra, Portugal, under the single number 516561073. Before accessing and using this App, the user (hereinafter, “User” or “You”) must read, understand and accept the Terms and Conditions described below. These Terms and Conditions are supplemented in all which is not herein provided for, by the Privacy Policy.</p>" }
     ]
-  }
+  },
+  "conditions": [
+    {
+      "title": "Acceptance of these Terms and Conditions",
+      "content": [
+        { "text": "<p>You acknowledge that by accessing and using the App, you are also accepting these Terms and Conditions. If you do not agree with any of the rules set forth in these Terms and Conditions, you should not use or access the App.</p>" }
+      ]
+    },
+    {
+      "title": "Changes to the Terms and Conditions",
+      "content": [
+        { "text": "<p>Sqill reserves the right to amend, modify, update or remove, in whole or in part, at any time, without prior notice and with immediate effect these Terms and Conditions. You should review these Terms and Conditions from time to time in order to confirm if any updates or changes were made hereto.</p>" },
+        { "text": "<p>If Sqill amends the Terms and Conditions, it will post the relevant changes on the App and will indicate at the bottom of this page the date of the last update. If you do not agree to abide by these or any future Terms and Conditions, you should not use or access (or continue to use or access) the App. It is your responsibility to regularly check our App to determine if there have been changes to these Terms and Conditions and to review such changes.</p>" }
+      ]
+    },
+    {
+      "title": "Access to the App",
+      "content": [
+        { "text": "<p>Access to the App does not require any registration. However, to access certain features of the App the user needs an Account, as foreseen under the Privacy Policy. In order to create an Account, the user needs to provide, at least: an email address, first and last name and a password. The user ensures that all data provided are true, exact, current and authentic, and must keep them permanently updated.</p>" },
+        { "text": "<p>The user must keep confidential the login credentials and shall not disclose them to third parties nor navigate in conditions that allow their use by third parties. Any access and use of the Account through the credentials of the user will be of their exclusive responsibility.</p>" },
+        { "text": "<p>The user can use the button &quot;Recover Password&quot; if the access password is lost, in which case a new password will be generated and sent to the email address indicated when creating the Account.</p>" }
+      ]
+    },
+    {
+      "title": "Use of the App",
+      "content": [
+        { "text": "<p>In general, the user must use the App in a responsible, prudent and careful manner and must not disrupt or degrade the continuity, integrity and quality of the resources and functionalities of the same, nor conflict with the rights and/or possibilities of use on the part of third party users.</p>" },
+        { "text": "<p>The user undertakes not to use the App to make available or share any content that is illegal, false, misleading, threatening, malicious, abusive, defamatory, injurious, invasive of privacy; racially, ethically or morally reprehensible, harmful or offensive to the dignity of persons or harmful to minors, namely through the available communication channels or through the videos uploaded.</p>" },
+        { "text": "<p>The user is expressly prevented from sharing information or content which belongs to third parties and which the user is not entitled to use, including, but not limited to, content which is protected by third party intellectual property rights (“IPR”) or content containing personal data of third parties.</p>" },
+        { "text": "<p>The use of the App to provide or transmit any type of material which contains or may contain viruses, worms, defects, Trojan horses or other item or computer codes, files or programmes which may interrupt, destroy or limit the functionality of any computer equipment or system is expressly forbidden.</p>" },
+        { "text": "<p>The user shall not make available or transmit any unsolicited or unauthorised content such as SPAM; or collect, make available, transmit or exploit information about other users for unauthorised purposes.</p>" }
+      ]
+    },
+    {
+      "title": "Intellectual Property Rights",
+      "content": [
+        { "text": "<p>The user acknowledges that the structure and layout of the App, the selection, organization and presentation of its content, including its functions and the software it uses, as well as the trademarks, logos and symbols presented on it, are the property of or have been duly licensed in favor of Sqill.</p>" },
+        { "text": "<p>The user further acknowledges that the contents of this App (texts, images, graphics, marks, sounds and animations and all other information and elements contained therein) are protected by IPR and that such rights must be respected.</p>" },
+        { "text": "<p>The user is not authorized to transmit, communicate to the public, publish, make available, modify, transform, copy, sell, use or distribute, by any means, the text, images and other information contained or that are part of the App, without previous written authorization from Sqill. The use of brands and logos in the App, as well as the availability of its materials and products, do not grant (and cannot be interpreted as granting) permission to the Users to use, directly or indirectly, such brands, logos and materials.</p>" }
+      ]
+    },
+    {
+      "title": "Video upload",
+      "content": [
+        { "text": "<p>When uploading a video, the User declares and warrants that there are no restrictions regarding the uploaded video, namely, that the submitted content does not infringe any IPR or related right or personality right belonging to a third party. Accordingly, the User warrants that she/he hold all necessary licences, authorisations and rights to use third party content in the uploaded video.</p>" },
+        { "text": "<p>The User, when uploading a video and as the IPR owner of the video, grants Sqill a non-exclusive and universal licence to exploit the work for the duration of the IPR in accordance with Portuguese law, expressly and irrevocably, without limitation as to the manner or means of exploitation. The license granted allows Sqill to exploit the video, and may, in particular, reproduce, distribute, communicate to the public and make it available to the public (including via the internet), by any existing or future means.</p>" },
+        { "text": "<p>When the User is not the owner of the IPR of the video, the User ensures she/he was authorised by the owner of the IPR to provide Sqill with a license in the described terms.</p>" },
+        { "text": "<p>The User may also request Sqill to provide a certain video. This will only be possible to the extent Sqill has access to and rights over the mentioned video. Sqill does not warrant or guarantee it is able to provide the requested video to the User.</p>" }
+      ]
+    },
+    {
+      "title": "Notice and take down mechanism",
+      "content": [
+        { "text": "<p>Any User may challenge the publication of a certain video on the App, suggesting its removal from the App when believing it breaches any IPR, the privacy or protection of personal data, for showing offensive content or for any other reason that may justify the exclusion of the video from the App. Sqill will analyse any claim and remove the video when it breaches these Terms and Conditions.</p>" }
+      ]
+    },
+    {
+      "title": "Personal Data",
+      "content": [
+        { "text": "<p>The use of the App does not necessarily require the provision of personal data, however, certain features of the App demand such provision. The data will be processed under the terms set out in the Privacy Policy.</p>" }
+      ]
+    },
+    {
+      "title": "Liability and Warranties",
+      "content": [
+        { "text": "<p>The user acknowledges that any use she/he makes of the App is at her/his own risk and that she/he is solely responsible for any damage caused to the computer system and/or equipment or for any other damage or loss, including loss or damage to data, resulting from the use of the materials, content or information obtained by any means through the App.</p>" },
+        { "text": "<p>Sqill does not guarantee that:<ul><li>The App or any functionality available on it will meet any needs or expectations of the User;</li><li>Any advice, recommendation or information of any kind, under the responsibility of Sqill, presented or made available on the App or obtained through its use, are current, accurate, complete or free from errors - Sqill informs you that it does not assume any legal duty in this matter;</li><li>Any material or other content made available by third parties through the App is safe, legal or appropriate;</li><li>The qualities, functions or characteristics of the products, services, information or other materials or content disclosed on the App fulfil any expectations of the Users.</li></ul></p>" },
+        { "text": "<p>Sqill shall not be liable for any errors that may occur due to system irregularities, failures (temporary or permanent) of the App, its applications or other tools, nor shall it be held liable for any damages resulting from the improper use or impossibility of using the App.</p>" },
+        { "text": "<p>Except for Sqill's gross negligence or wilful misconduct, the user shall indemnify, protect, defend and hold harmless Sqill and its agents, partners and shareholders, from and against any and all claims, damages, losses, and/or damages, liens, judgments, penalties, attorneys' and consultants' fees, expenses and/or liabilities arising out of, involving, or in connection with, the videos uploaded by the user and any IPR, image or personal data related matters. If any action or proceeding is brought against Sqill by reason of any of the foregoing matters, the user shall upon notice defend the same at the user's expense and Sqill shall cooperate with the user in such defense.</p>" }
+      ]
+    },
+    {
+      "title": "Operability of the App",
+      "content": [
+        { "text": "<p>Sqill has the exclusive right to, at any time, suspend, block, interrupt or terminate an Account or, in whole or in part, access to or use of the App or to terminate the App, temporarily or definitively, in whole or in part, at its discretion and without notice.</p>" },
+        { "text": "<p>You agree and acknowledge that Sqill shall not be liable before you or any third party for any termination of your access to and use of the App.</p>" }
+      ]
+    },
+    {
+      "title": "Links to Third Parties Websites",
+      "content": [
+        { "text": "<p>Sqill may provide links to websites of other entities. These sites are not owned, operated or controlled by Sqill, thus Sqill is not responsible, does not approve or in any way supports or endorses the content of these sites, or of those linked or referred to in them.</p>" },
+        { "text": "<p>The provision of links does not imply, under any circumstances, the existence of relations between Sqill and the owner or manager of the website to which the link refers. The use of these links is the entire responsibility of the users.</p>" }
+      ]
+    },
+    {
+      "title": "Security",
+      "content": [
+        { "text": "<p>Sqill does not guarantee continuous operation of the App, nor that it will be free of errors or faults or that it will be available at all times.</p>" },
+        { "text": "<p>Sqill naturally endeavors with its best efforts to ensure that the App does not have any viruses or other such elements harmful to your computer. However, since Sqill cannot fully control the circulation of information over the internet, it cannot guarantee that such information does not contain any kind of virus or other elements that could damage your computer.</p>" },
+        { "text": "<p>To ensure the security of the App, Sqill may, at any time and without prior notice, take the necessary steps to ensure the integrity, security, continuity or quality of the App, such as restricting or limiting access to same.</p>" }
+      ]
+    },
+    {
+      "title": "Validity of the Terms and Conditions",
+      "content": [
+        { "text": "<p>If any part or provision of these Terms and Conditions is not enforceable or conflicts with the applicable law, the validity of the remaining parts or provisions will not be affected.</p>" }
+      ]
+    },
+    {
+      "title": "Questions",
+      "content": [
+        { "text": "<p>Should you have any questions about these Terms and Conditions, please send us your query to info@heysqill.com</p>" }
+      ]
+    },
+    {
+      "title": "Applicable law and Jurisdiction",
+      "content": [
+        { "text": "<p>The App&#39;s Terms and Conditions shall be governed by Portuguese law.</p>" },
+        { "text": "<p>All issues and disputes that may arise regarding these Terms shall be submitted to the exclusive jurisdiction of the courts of Lisbon, with express waiver of any other.</p>" }
+      ]
+    }
+  ]
 }

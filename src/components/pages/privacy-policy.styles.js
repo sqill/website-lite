@@ -16,8 +16,42 @@ export const Section = styled('section')(() => ({
 }));
 
 export const Wrapper = styled('div')(() => ({
-  margin: 'auto',
+  margin: '0 auto 3rem',
   maxWidth: '80rem',
+}));
+
+export const Content = styled('div')(() => ({
+  display: 'flex',
+
+  '> div': {
+    width: '100%',
+  },
+
+  span: {
+    marginRight: '0.5rem',
+  },
+
+  table: {
+    borderBottom: `0.2rem solid ${colors.brand1}`,
+    borderTop: `0.2rem solid ${colors.brand1}`,
+    textAlign: 'center',
+
+    thead: {
+      color: colors.brand1,
+    },
+
+    tr: {
+      borderTop: `0.1rem solid ${colors.brand1}`,
+    },
+
+    th: {
+      padding: '0.5rem 1rem',
+    },
+
+    td: {
+      padding: '1rem',
+    },
+  },
 }));
 
 export const H1 = styled('h1')(() => ({

@@ -10,17 +10,28 @@ const TermsAndConditions = () => {
   const { t } = useTranslation('termsAndConditions');
   const meta = t('meta');
   const options = t('header.options');
+  const conditions = t('conditions');
 
   return (
     <Layout {...meta}>
       <Section>
         <Wrapper>
           <H1>{t('header.title')}</H1>
-          {options.map(({ title, text }, idx) => (
+          {options.map(({ text }, idx) => (
             <React.Fragment key={idx}>
-              {title && <H2>{title}</H2>}
               {text && <Div dangerouslySetInnerHTML={{__html: text}} />}
             </React.Fragment>
+          ))}
+        </Wrapper>
+
+        <Wrapper>
+          {conditions.map(({ title, content }, idx) => (
+            <div key={idx}>
+              <H2>{idx+1}. {title}</H2>
+              {content.map(({ text }, index) => (
+                <Div key={index} dangerouslySetInnerHTML={{__html: text}} />
+              ))}
+            </div>
           ))}
         </Wrapper>
       </Section>

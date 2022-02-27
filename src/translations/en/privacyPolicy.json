@@ -22,5 +22,105 @@
       "Contacts",
       "Changes to this Privacy Policy"
     ]
-  }
+  },
+  "policies": [
+    {
+      "title": "Personal data collection",
+      "content": [
+        { "text": "<p>Sqill is the data controller for the processing of personal data belonging to Users and may process such data directly and/or through entities subcontracted for this purpose. Personal data collected from the App will be processed in the terms described herein for severalpurposes, listed below.</p>" },
+        { "text": "<p>App access and navigation in general does not necessarily require the provision of personal data. However, the use of certain features of the App require the provision of personal data (for example, the creation of an account or the upload of videos). In these cases, Users will only have access to the functionalities and services in question after providing the necessary personal data, which will be processed exclusively in accordance with and for the purposesdescribed herein.</p>" },
+        { "text": "<p>Sqill collects and processes personal data for the purposes of creating and managing your account, to process the upload of the videos, to manage the messaging service and to manage your interactions with the uploaded videos. Personal data must be supplied for these purposes.</p>" },
+        { "text": "<p>All the information collected is listed in the table below:</p><table><thead><tr><th>Activity</th><th>Data Collected</th></tr></thead><tbody><tr><td>Creation of a player account</td><td>E-mail address<br>Password<br>First and last name<br>Phone number<br>Birth date<br>Nationality<br>District<br>Instagram username (optional)<br>Invite code (optional)<br>Height and weight (optional)<br>Preferred foot<br>Seniority and level<br>Club, country and identity code<br>Position and past experience<br>Photograph</td></tr><tr><td>Creation of a finder account</td><td>E-mail address<br>Password<br>Photograph<br>First and last name<br>Country and district<br>Company name<br>Account type (coach, sport director, agent or brand manager)</td></tr><tr><td>Video upload</td><td>Image</td></tr></tbody></table>" },
+        { "text": "<p>Sqill processes the personal data related with your use of the App in order to provide you a better user experience and to present you contents and features more suited to your preferences.</p>" }
+      ]
+    },
+    {
+      "title": "Purposes for Personal data processing",
+      "content": [
+        { "text": "<p>In the table the User can find all the purposes for which Sqill may process personal data:</p><table><thead><tr><th>Activity</th><th>Purpose</th></tr></thead><tbody><tr><td>Player account</td><td>Creation of the player Account<br>Managing contacts and requests<br>Upload videos<br>Allow for interactions with the videos<br>Allow video sharing on social media</td></tr><tr><td>Finder account</td><td>Creation of the finder Account<br>Managing contacts and requests<br>Allow for interactions with the videos<br>Allow video sharing on social media</td></tr></tbody></table>" }
+      ]
+    },
+    {
+      "title": "Legal grounds for processing",
+      "content": [
+        { "text": "<p>The legal grounds used as basis for processing depend on which information is processed and the context in which the processing occurs.</p>" },
+        { "text": "<p>Sqill will process the User’s personal data mandatory for the creation of the personal account based on the performance of the contract entered into by the User when accepting the Terms and Conditions of the App. Sqill may also be obliged by law to process your personal data.</p>" },
+        { "text": "<p>Sqill may also process your personal data based on our legitimate interests to have your account as complete as possible, to develop our application and to optimise the matching process between players and finders, as it happens with your profile picture.</p>" },
+        { "text": "<p>As to your weight and height (biometric data), Sqill will process them based on your consent, provided that you give such consent. This data will only be collected and displayed on your profile if you have a player account.</p>" }
+      ]
+    },
+    {
+      "title": "Social Media",
+      "content": [
+        { "text": "<p>Through the App, the User may share content through its social media networks.</p>" },
+        { "text": "<p>Sqill is not responsible for personal data processing carried by such platforms in consequence of the mentioned share. The User must read the applicable Terms and Conditions and Privacy Policies of these platforms before sharing the content provided.</p>" }
+      ]
+    },
+    {
+      "title": "Image rights",
+      "content": [
+        { "text": "<p>When uploading a video, the User understands that such upload will imply the processing of her/his image. It is the sole responsibility of the User to ensure that such exercise of the image rights is legally valid.</p>" },
+        { "text": "<p>When third parties appear in the uploaded video, the User guarantees to have informed such party of the conditions set out in this Privacy Policy, obtaining the necessary authorisation to provide such videos for the mentioned purposes.</p>" }
+      ]
+    },
+    {
+      "title": "Privacy Settings",
+      "content": [
+        { "text": "<p>When creating a Finder account, the User can choose between having a public account or a private account. Creating a public account allows the other players and finders to find you through the App, whilst creating a private account prevents that from happening, not allowing other Users to interact with you.</p>" }
+      ]
+    },
+    {
+      "title": "Disclosure to third parties",
+      "content": [
+        { "text": "<p>Sqill may forward your data to data processors for the purposes mentioned above, pursuant to an agreement signed with said entities.</p>" },
+        { "text": "<p>In compliance with its legal obligations and to conclude the operations carried out through the App, or on the basis of the consent provided for this purpose, Sqill may also forward your data to third parties, namely: (i) partners or providers with whom Sqill establishes relationships, (ii) financial/payment institutions; (iii) competent entities, in accordance with the law.</p>" }
+      ]
+    },
+    {
+      "title": "User rights",
+      "content": [
+        { "text": "<p>In accordance with applicable law, you may, at any time, request access to your personal data, its rectification, elimination or limited processing, portability, or opposition to its processing. You may exercise these rights directly by sending an e-mail or by writing to Sqill, to the contacts provided below.</p>" },
+        { "text": "<p>You also have the right to withdraw your consent at any time, although this does not affect the validity of the data processing previously carried out based on your consent or the processing of your personal data based on other legal grounds.</p>" },
+        { "text": "<p>Without prejudice to any other administrative or judicial action, Users have the right to submit a complaint to the Portuguese Data Protection Authority (CNPD) or other competent control authority in accordance with the law, should they consider that the processing of their data by Sqill at any time breaches the applicable legal framework.</p>" }
+      ]
+    },
+    {
+      "title": "Personal data retention",
+      "content": [
+        { "text": "<p>Personal data necessary for the creation of the Account will be kept for as long as you wish to keep your account.</p>" },
+        { "text": "<p>Other personal data collected through the App will be kept until Sqill has provided the relevant services, products and information, in order to facilitate information requested by Users, except when a legal obligation requires us to keep the personal data for a longer period.</p>" }
+      ]
+    },
+    {
+      "title": "Transfers to third countries",
+      "content": [
+        { "text": "<p>For the purposes foreseen in this Policy, Sqill may transfer personal data to third countries (outside the European Union or the European Economic Area) in relation to which the European Commission has not adopted a decision on adequacy. In this case, Sqill undertake to adopt suitable security measures to ensure the confidentiality and protection of the personal data processed, in compliance with the applicable personal data protection legislation.</p>" }
+      ]
+    },
+    {
+      "title": "Security",
+      "content": [
+        { "text": "<p>Sqill uses appropriate technical and organisational measures to protect the personal information collected and processed. The measures used are designed to provide a level of security appropriate to the risk of processing the User’s information.</p>" },
+        { "text": "<p>Whenever the User makes data available over the Internet, it is responsible to ensure that the equipment is adequately protected (for example, with up-to-date antivirus software).</p>" }
+      ]
+    },
+    {
+      "title": "Cookies and other tracking technologies",
+      "content": [
+        { "text": "<p>We use cookies in our App. “Cookies&quot; are small text files which identify the User's computer or mobile device on the App server. Cookies, as such, do not identify individual users, but only the device used.<br>This App uses cookies which help determine the use, interest and number of accesses to the App, and allow for faster and more efficient browsing of the App. Sqill can, thereby, provide Users with a more customised and tailored service.<br>This App uses the following cookies:</p><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td></td><td></td></tr></tbody></table><p>All browsers allow Users to accept, refuse or delete cookies, namely through the selection of appropriate settings in each browser. Users can configure cookies in the “options” or &quot;settings” menu of their browser. To know more about cookies, including how to see what cookies have been created, how to create and delete them, Users can go to www.allaboutcookies.org which contains information on how to manage user settings on various browsers.</p><p>Please note, however, that if a User deactivates cookies this may impact their browsing of the App, whether entirely or in part.</p>" }
+      ]
+    },
+    {
+      "title": "Contacts",
+      "content": [
+        { "text": "<p>If you have any questions related to the processing of your personal data and the exercise of the rights conferred to you, please contact us through the following means: E-mail: [•]</p>" }
+      ]
+    },
+    {
+      "title": "Changes to this Privacy Policy",
+      "content": [
+        { "text": "<p>Sqill reserves the right to, at any given time and without prior notice and with immediate effects, alter, add or amend the present Privacy Policy, in which event said changes will be immediately disclosed in this online page.</p>" }
+      ]
+    }
+  ]
 }
