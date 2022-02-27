@@ -36,6 +36,7 @@ const SqillForBusiness = () => {
                 button={form.button}
                 tableName='4biz'
                 success={`${form.feedback.title} ${form.feedback.text}`}
+                error={form.feedback.error}
               />
             </HeroContent>
             <ImageWrapper>
@@ -74,6 +75,13 @@ const SqillForBusiness = () => {
               {section2.subsection.options.map(({ label }, idx) => <li key={idx}>{label}</li>)}
             </ul>
           </AndWrapper>
+          <Form
+            fields={section2.subsection.form.fields}
+            button={section2.subsection.form.button}
+            tableName='4biz'
+            success={`${section2.subsection.form.feedback.title} ${section2.subsection.form.feedback.text}`}
+            error={section2.subsection.form.feedback.error}
+          />
         </Wrapper>
       </Section>
     </Layout>

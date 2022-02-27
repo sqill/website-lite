@@ -4,7 +4,7 @@ export default {
   ATHLETE: '/athlete',
   FAQS: '/faqs',
   CONTACTS: '/contacts',
-  BLOG: '/',
+  BLOG: 'https://app.heysqill.com/blog',
   SQILL_FOR_BUSINESS: '/sqill-for-business',
   SQILL_FOR_PROS: '/sqill-for-pros',
   PRIVACY_POLICY: '/privacy-policy',

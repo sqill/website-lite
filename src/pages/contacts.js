@@ -26,6 +26,7 @@ const Contacts = () => {
             button={form.button}
             tableName='sayHi'
             success={`${form.feedback.title} ${form.feedback.text}`}
+            error={form.feedback.error}
           />
         </Wrapper>
       </Section>

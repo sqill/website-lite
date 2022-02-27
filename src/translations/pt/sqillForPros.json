@@ -18,7 +18,8 @@
       "button": "Vamos falar?",
       "feedback": {
         "title": "Novo registo efectuado com sucesso",
-        "text": "Vamos enviar por email os próximos passos!"
+        "text": "Vamos enviar por email os próximos passos!",
+        "error": "Algo correu mal, por favor tente novamente"
       }
     }
   }

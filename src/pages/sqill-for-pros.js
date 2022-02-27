@@ -33,6 +33,7 @@ const SqillForPros = () => {
             button={form.button}
             tableName='4pros'
             success={`${form.feedback.title} ${form.feedback.text}`}
+            error={form.feedback.error}
           />
         </Wrapper>
       </Section>

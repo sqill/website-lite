@@ -17,7 +17,8 @@
       "button": "Let's talk",
       "feedback": {
         "title": "New registration submitted with success.",
-        "text": "We will send you an email with the next steps"
+        "text": "We will send you an email with the next steps",
+        "error": "Something went wrong, please try again"
       }
     }
   }

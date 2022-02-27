@@ -16,8 +16,9 @@
       ],
       "button": "Let's talk",
       "feedback": {
-        "title": "New registration submitted with success.",
-        "text": "We will send you an email with the next steps"
+        "title": "Novo registo efectuado com sucesso",
+        "text": "Vamos enviar por email os próximos passos!",
+        "error": "Algo correu mal, por favor tente novamente"
       }
     }
   }

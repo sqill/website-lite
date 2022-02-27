@@ -119,6 +119,7 @@ export const IconsWrapper = styled('div')(() => ({
 }));
 
 export const AndWrapper = styled('div')(() => ({
+  marginBottom: '6rem',
   textAlign: 'center',
 
   p: {

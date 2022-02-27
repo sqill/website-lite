@@ -22,7 +22,8 @@
       "button": "Let's talk",
       "feedback": {
         "title": "New registration submitted with success.",
-        "text": "We will send you an email with the next steps"
+        "text": "We will send you an email with the next steps",
+        "error": "Something went wrong, please try again"
       }
     }
   },
@@ -50,15 +51,16 @@
       ],
       "form": {
         "fields": [
-          { "label": "Name", "type": "text" },
-          { "label": "Company", "type": "text" },
-          { "label": "Email", "type": "email" },
-          { "label": "VAT", "type": "number" }
+          { "id": "Name", "label": "Name", "type": "text" },
+          { "id": "About", "label": "Company", "type": "text" },
+          { "id": "Email", "label": "Email", "type": "email" },
+          { "id": "VAT", "label": "VAT", "type": "number" }
         ],
         "button": "Let's talk",
         "feedback": {
           "title": "New registration submitted with success.",
-          "text": "We will send you an email with the next steps"
+          "text": "We will send you an email with the next steps",
+          "error": "Something went wrong, please try again"
         }
       }
     }

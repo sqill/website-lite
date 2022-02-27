@@ -22,7 +22,8 @@
       "button": "Vamos falar?",
       "feedback": {
         "title": "Novo registo efectuado com sucesso",
-        "text": "Vamos enviar por email os próximos passos!"
+        "text": "Vamos enviar por email os próximos passos!",
+        "error": "Algo correu mal, por favor tente novamente"
       }
     }
   },
@@ -50,14 +51,16 @@
       ],
       "form": {
         "fields": [
-          { "label": "Nome", "type": "text" },
-          { "label": "Empresa", "type": "text" },
-          { "label": "NIF", "type": "number" }
+          { "id": "Name", "label": "Nome", "type": "text" },
+          { "id": "About", "label": "Empresa", "type": "text" },
+          { "id": "Email", "label": "Email", "type": "email" },
+          { "id": "VAT", "label": "NIF", "type": "number" }
         ],
         "button": "Sabe mais",
         "feedback": {
           "title": "Novo registo efectuado com sucesso",
-          "text": "Vamos enviar por email os próximos passos!"
+          "text": "Vamos enviar por email os próximos passos!",
+          "error": "Algo correu mal, por favor tente novamente"
         }
       }
     }

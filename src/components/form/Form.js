@@ -1,9 +1,10 @@
-import { useRef } from 'react';
+import { useState,  useRef } from 'react';
 
-import { StyledForm, Div, Label, Input, Button } from './Form.styles';
+import { StyledForm, Div, Label, Input, Button, P } from './Form.styles';
 
-const Form = ({ fields, button, tableName, success, error }) => {
+const Form = ({ fields, button, tableName, success: successMessage, error: errorMessage }) => {
   const formRef = useRef();
+  const [feedback, setFeedback] = useState('');
 
   const onFormSubmit = async (ev) => {
     ev.preventDefault();
@@ -21,9 +22,9 @@ const Form = ({ fields, button, tableName, success, error }) => {
           "fields": data,
         }),
       })
-      .then(response => response.json())
-      .then(success => console.log('s:', success))
-      .catch(error => console.log('e:', error));
+      .then((response) => response.json())
+      .then((success) => setFeedback(successMessage))
+      .catch((error) => setFeedback(errorMessage));
   };
 
   return (
@@ -43,6 +44,7 @@ const Form = ({ fields, button, tableName, success, error }) => {
         </Div>
       ))}
       <Button type='submit'>{button}</Button>
+      {feedback && <P>{feedback}</P>}
     </StyledForm>
   );
 };

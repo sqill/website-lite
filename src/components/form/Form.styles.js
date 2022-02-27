@@ -45,3 +45,9 @@ export const Button = styled('button')(() => ({
   textTransform: 'uppercase',
   width: '100%',
 }));
+
+export const P = styled('p')(() => ({
+  ...typo.H3,
+  marginTop: '2rem',
+  textAlign: 'center',
+}));
