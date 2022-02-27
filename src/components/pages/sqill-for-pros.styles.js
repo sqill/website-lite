@@ -44,6 +44,7 @@ export const H1 = styled('h1')(() => ({
   justifyContent: 'center',
   marginBottom: '3rem',
   textAlign: 'center',
+  textShadow: colors.shadow,
 }));
 
 export const H2 = styled('h2')(() => ({
@@ -51,6 +52,7 @@ export const H2 = styled('h2')(() => ({
   margin: '0 auto',
   maxWidth: '60rem',
   textAlign: 'center',
+  textShadow: colors.shadow,
   textTransform: 'uppercase',
 }));
 

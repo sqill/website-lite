@@ -160,6 +160,7 @@ export const H1 = styled('h1')(() => ({
   display: 'flex',
   margin: '0 0 3rem -1rem',
   textAlign: 'left',
+  textShadow: colors.shadow,
 
   [breakpoints.extraSmallMedia]: {
     ...typo.H2_S2,
@@ -168,6 +169,7 @@ export const H1 = styled('h1')(() => ({
 
 export const H2 = styled('h2')(() => ({
   ...typo.H2,
+  textShadow: colors.shadow,
   textTransform: 'uppercase',
 }));
 
