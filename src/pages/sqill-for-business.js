@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image'
 
 import Layout from '@sqill/components/layout';
+import Form from '@sqill/components/form';
 
 import { Section, Wrapper, Hero, HeroContent, ImageWrapper, StepImage, StepWrapper, IconsWrapper, AndWrapper, Hint, H1, H2, StyledH2, H3, Div } from '@sqill/components/pages/sqill-for-business.styles';
 
@@ -10,6 +11,7 @@ const SqillForBusiness = () => {
   const { t } = useTranslation('sqillForBusiness');
   const meta = t('meta');
   const hero = t('header.hero');
+  const form = t('header.form');
   const options = t('section1.options');
   const section2 = t('section2');
 
@@ -29,6 +31,12 @@ const SqillForBusiness = () => {
               </H1>
               <H2>{t('header.subtitle')}</H2>
               <Div dangerouslySetInnerHTML={{__html: t('header.description')}} />
+              <Form
+                fields={form.fields}
+                button={form.button}
+                tableName='4biz'
+                success={`${form.feedback.title} ${form.feedback.text}`}
+              />
             </HeroContent>
             <ImageWrapper>
               <Image src={`/images/4biz/${hero.image}`} alt='sqill logo' width={hero.width} height={hero.height} />

@@ -3,12 +3,14 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image'
 
 import Layout from '@sqill/components/layout';
+import Form from '@sqill/components/form';
 
 import { Section, Wrapper, ImageWrapper, H1, H2, VideoWrapper, Div } from '@sqill/components/pages/sqill-for-pros.styles';
 
 const SqillForPros = () => {
   const { t } = useTranslation('sqillForPros');
   const meta = t('meta');
+  const form = t('header.form');
 
   return (
     <Layout {...meta}>
@@ -26,6 +28,12 @@ const SqillForPros = () => {
           </ImageWrapper>
           <H2>{t('header.subtitle')}</H2>
           <Div dangerouslySetInnerHTML={{__html: t('header.description')}} />
+          <Form
+            fields={form.fields}
+            button={form.button}
+            tableName='4pros'
+            success={`${form.feedback.title} ${form.feedback.text}`}
+          />
         </Wrapper>
       </Section>
     </Layout>
