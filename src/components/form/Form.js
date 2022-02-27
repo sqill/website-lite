@@ -1,14 +1,29 @@
 import { useState,  useRef } from 'react';
 
+import { identify } from '@sqill/utils/gtag';
 import { StyledForm, Div, Label, Input, Button, P } from './Form.styles';
 
-const Form = ({ fields, button, tableName, success: successMessage, error: errorMessage }) => {
+function identifyUserFromFields(data) {
+  if (!data) return;
+
+  const email = data.email || data.Email;
+  const name = data.name || data.Name;
+
+  if (!email && !name) return;
+
+  identify({ email, name });
+}
+
+
+const Form = ({ fields, button, tableName, success, error }) => {
   const formRef = useRef();
   const [feedback, setFeedback] = useState('');
 
   const onFormSubmit = async (ev) => {
     ev.preventDefault();
     const data = Object.assign({}, ...fields.map((field) => ({ [field.id]: document.getElementById(field.id).value })));
+
+    identifyUserFromFields(data);
 
     await fetch('/.netlify/functions/form-submit',
       {
