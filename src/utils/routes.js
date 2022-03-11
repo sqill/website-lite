@@ -1,7 +1,7 @@
 export default {
   HOME: '/',
   ABOUT: '/about',
-  ATHLETE: '/athlete',
+  ATHLETE: '/#athlete',
   FAQS: '/faqs',
   CONTACTS: '/contacts',
   BLOG: 'https://app.heysqill.com/blog',

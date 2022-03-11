@@ -7,6 +7,7 @@ export const gray0 = '#B8B8B8';
 export const gray2 = '#2F2F2F';
 export const white = '#FFFFFF';
 export const whiteA60 = 'rgba(255, 255, 255, 0.6)';
+export const whiteA80 = 'rgba(255, 255, 255, 0.8)';
 
 export const green0 = '#B6CEC8';
 // export const green1 = '#7FCCB3';

@@ -16,6 +16,7 @@
         { "id": "Phone", "label": "Telemóvel", "type": "number" }
       ],
       "button": "Vamos falar?",
+      "submit": "Enviar",
       "feedback": {
         "title": "Novo registo efectuado com sucesso",
         "text": "Vamos enviar por email os próximos passos!",

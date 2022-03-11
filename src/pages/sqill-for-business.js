@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image'
 
 import Layout from '@sqill/components/layout';
 import Form from '@sqill/components/form';
+import Button from '@sqill/components/button';
+import Modal from '@sqill/components/modal';
 
 import { Section, Wrapper, Hero, HeroContent, ImageWrapper, StepImage, StepWrapper, IconsWrapper, AndWrapper, Hint, H1, H2, StyledH2, H3, Div } from '@sqill/components/pages/sqill-for-business.styles';
 
@@ -14,6 +17,8 @@ const SqillForBusiness = () => {
   const form = t('header.form');
   const options = t('section1.options');
   const section2 = t('section2');
+
+  const [showForm, setShowForm] = useState(false);
 
   return (
     <Layout {...meta}>
@@ -31,13 +36,7 @@ const SqillForBusiness = () => {
               </H1>
               <H2>{t('header.subtitle')}</H2>
               <Div dangerouslySetInnerHTML={{__html: t('header.description')}} />
-              <Form
-                fields={form.fields}
-                button={form.button}
-                tableName='4biz'
-                success={`${form.feedback.title} ${form.feedback.text}`}
-                error={form.feedback.error}
-              />
+              <Button onClick={() => setShowForm(true)} label={form.button} />
             </HeroContent>
             <ImageWrapper>
               <Image src={`/images/4biz/${hero.image}`} alt='sqill logo' width={hero.width} height={hero.height} />
@@ -49,7 +48,7 @@ const SqillForBusiness = () => {
           {options.map(({ key, title, description, image, width, height }, idx) => (
             <StepWrapper key={idx} isOdd={idx%2}>
               <div>
-                <H3><div>{key}</div><span>{title}</span></H3>
+                <H3><div>{key}</div>{title.split('').map((letter, titleIdx) => <span key={titleIdx}>{letter}</span>)}</H3>
                 <div dangerouslySetInnerHTML={{__html: description }} />
               </div>
               <StepImage>
@@ -84,6 +83,18 @@ const SqillForBusiness = () => {
           />
         </Wrapper>
       </Section>
+
+      {showForm && (
+        <Modal onClick={() => setShowForm(false)}>
+          <Form
+            fields={form.fields}
+            button={form.submit}
+            tableName='4biz'
+            success={`${form.feedback.title} ${form.feedback.text}`}
+            error={form.feedback.error}
+          />
+        </Modal>
+      )}
     </Layout>
   );
 };

@@ -16,10 +16,10 @@
       "fields": [
         { "id": "Name", "label": "Nome", "type": "text" },
         { "id": "About", "label": "Empresa", "type": "text" },
-        { "id": "Email", "label": "Email", "type": "email" },
-        { "id": "VAT", "label": "NIF", "type": "number" }
+        { "id": "Email", "label": "Email", "type": "email" }
       ],
       "button": "Vamos falar?",
+      "submit": "Enviar",
       "feedback": {
         "title": "Novo registo efectuado com sucesso",
         "text": "Vamos enviar por email os próximos passos!",
@@ -53,10 +53,10 @@
         "fields": [
           { "id": "Name", "label": "Nome", "type": "text" },
           { "id": "About", "label": "Empresa", "type": "text" },
-          { "id": "Email", "label": "Email", "type": "email" },
-          { "id": "VAT", "label": "NIF", "type": "number" }
+          { "id": "Email", "label": "Email", "type": "email" }
         ],
         "button": "Sabe mais",
+        "submit": "Enviar",
         "feedback": {
           "title": "Novo registo efectuado com sucesso",
           "text": "Vamos enviar por email os próximos passos!",

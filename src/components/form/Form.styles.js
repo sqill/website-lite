@@ -4,8 +4,11 @@ import * as colors from '@sqill/theme/colors';
 import * as typo from '@sqill/theme/typography';
 
 export const StyledForm = styled('form')(() => ({
+  backgroundColor: colors.whiteA80,
+  borderRadius: '2rem',
   margin: '0 auto',
-  maxWidth: '25rem',
+  maxWidth: '35rem',
+  padding: '4rem',
 }));
 
 export const Div = styled('div')(() => ({
@@ -29,6 +32,18 @@ export const Input = styled('input')(() => ({
   color: colors.black,
   padding: '1rem 2rem',
   textAlign: 'center',
+  width: '100%',
+}));
+
+export const Textarea = styled('textarea')(() => ({
+  ...typo.P_S2_M,
+  backgroundColor: colors.whiteA60,
+  border: `0.1rem solid ${colors.gray0}`,
+  borderRadius: '1.5rem',
+  color: colors.black,
+  height: '10rem',
+  padding: '1rem 2rem',
+  textAlign: 'left',
   width: '100%',
 }));
 

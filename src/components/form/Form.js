@@ -1,7 +1,7 @@
 import { useState,  useRef } from 'react';
 
 import { identify } from '@sqill/utils/gtag';
-import { StyledForm, Div, Label, Input, Button, P } from './Form.styles';
+import { StyledForm, Div, Label, Input, Textarea, Button, P } from './Form.styles';
 
 function identifyUserFromFields(data) {
   if (!data) return;
@@ -55,7 +55,11 @@ const Form = ({ fields, button, tableName, success, error }) => {
       {fields.map(({ id, label, type }, idx) => (
         <Div key={idx}>
           <Label htmlFor={id}>{label}</Label>
-          <Input id={id} type={type} required />
+          {type === 'textarea' ? (
+            <Textarea id={id} required />
+          ) : (
+            <Input id={id} type={type} required />
+          )}
         </Div>
       ))}
       <Button type='submit'>{button}</Button>
