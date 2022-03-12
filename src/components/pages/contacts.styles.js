@@ -27,5 +27,6 @@ export const H1 = styled('h1')(() => ({
   display: 'flex',
   justifyContent: 'center',
   marginBottom: '3rem',
+  paddingRight: '1.5rem',
   textAlign: 'center',
 }));

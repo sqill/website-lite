@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image'
 
 import Layout from '@sqill/components/layout';
 import Form from '@sqill/components/form';
+import Button from '@sqill/components/button';
+import Modal from '@sqill/components/modal';
 
 import { Section, Wrapper, ImageWrapper, H1, H2, VideoWrapper, Div } from '@sqill/components/pages/sqill-for-pros.styles';
 
@@ -11,6 +14,8 @@ const SqillForPros = () => {
   const { t } = useTranslation('sqillForPros');
   const meta = t('meta');
   const form = t('header.form');
+
+  const [showForm, setShowForm] = useState(false);
 
   return (
     <Layout {...meta}>
@@ -28,15 +33,21 @@ const SqillForPros = () => {
           </ImageWrapper>
           <H2>{t('header.subtitle')}</H2>
           <Div dangerouslySetInnerHTML={{__html: t('header.description')}} />
+          <Button onClick={() => setShowForm(true)} label={form.button} />
+        </Wrapper>
+      </Section>
+
+      {showForm && (
+        <Modal onClick={() => setShowForm(false)}>
           <Form
             fields={form.fields}
-            button={form.button}
+            button={form.submit}
             tableName='4pros'
             success={`${form.feedback.title} ${form.feedback.text}`}
             error={form.feedback.error}
           />
-        </Wrapper>
-      </Section>
+        </Modal>
+      )}
     </Layout>
   );
 };

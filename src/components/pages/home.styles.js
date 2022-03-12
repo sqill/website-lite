@@ -79,6 +79,21 @@ export const SectionCompare = styled('section')(() => ({
     textAlign: 'center',
     textTransform: 'uppercase',
   },
+
+  [breakpoints.extraSmallMedia]: {
+    paddingBottom: '6rem',
+
+    '&:before, &:after': {
+      height: 'calc(50% + 4rem)',
+      width: '100vw',
+    },
+
+    '&:after': {
+      height: 'calc(50% - 4rem)',
+      left: '0',
+      top: 'calc(50% + 4rem)',
+    },
+  },
 }));
 
 export const SectionContent = styled('section')(() => ({
@@ -115,6 +130,10 @@ export const CompareWrapper = styled('div')(() => ({
     '&:last-child': {
       borderRadius: '2rem',
       flexDirection: 'row-reverse',
+    },
+
+    [breakpoints.lteSmallMedia]: {
+      maxHeight: '35rem',
     },
   },
 
@@ -166,7 +185,7 @@ export const PhoneWrapper = styled('div')((props) => ({
     width: '100%',
   },
 
-  [breakpoints.extraSmallMedia]: {
+  [breakpoints.lteSmallMedia]: {
     flex: '1 0 40%',
     justifyContent: 'flex-start',
     paddingTop: '3rem',
@@ -200,7 +219,8 @@ export const StepWrapper = styled('div')((props) => ({
 
     span: {
       backgroundColor: colors.black,
-      marginRight: '0.5rem',
+      marginRight: '0.4rem',
+      padding: '0 0.2rem',
     },
   },
 
@@ -247,11 +267,11 @@ export const Bg = styled('div')(() => ({
 
 export const BgCompare = styled('div')(() => ({
   height: '75%',
-  left: '50%',
+  marginLeft: '50vw',
   pointerEvents: 'none',
   position: 'absolute',
   top: '50%',
-  transform: 'translate(-50%, -50%)',
+  transform: 'translate(-75%, -50%)',
   width: '75%',
 
   [breakpoints.extraSmallMedia]: {
@@ -269,8 +289,13 @@ export const HeroImage = styled('div')(() => ({
   video: {
     height: '100%',
     marginLeft: '50%',
+    objectFit: 'cover',
     position: 'relative',
     transform: 'translateX(-50%)',
+
+    [breakpoints.largeMedia]: {
+      width: 'calc(100% + 0.2rem)',
+    },
   },
 
   [breakpoints.lteSmallMedia]: {

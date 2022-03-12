@@ -16,10 +16,10 @@
       "fields": [
         { "id": "Name", "label": "Name", "type": "text" },
         { "id": "About", "label": "Company", "type": "text" },
-        { "id": "Email", "label": "Email", "type": "email" },
-        { "id": "VAT", "label": "VAT", "type": "number" }
+        { "id": "Email", "label": "Email", "type": "email" }
       ],
       "button": "Let's talk",
+      "submit": "Send",
       "feedback": {
         "title": "New registration submitted with success.",
         "text": "We will send you an email with the next steps",
@@ -53,10 +53,11 @@
         "fields": [
           { "id": "Name", "label": "Name", "type": "text" },
           { "id": "About", "label": "Company", "type": "text" },
-          { "id": "Email", "label": "Email", "type": "email" },
-          { "id": "VAT", "label": "VAT", "type": "number" }
+          { "id": "Email", "label": "Email", "type": "email" }
+
         ],
         "button": "Let's talk",
+        "submit": "Send",
         "feedback": {
           "title": "New registration submitted with success.",
           "text": "We will send you an email with the next steps",

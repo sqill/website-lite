@@ -156,7 +156,8 @@ const Home = () => {
         </Wrapper>
       </SectionCompare>
 
-      <SectionContent>
+
+      <SectionContent id="athlete">
         <Wrapper>
           {section3.options.map(({ key, title, description, image, width, height }, idx) => (
             <StepWrapper key={idx} isOdd={idx%2}>

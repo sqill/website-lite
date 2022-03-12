@@ -28,7 +28,7 @@ export const Hero = styled('div')(() => ({
   marginTop: '6rem',
   maxWidth: '100vw',
   padding: '0 6rem',
-  textAlign: 'justify',
+  textAlign: 'center',
   transform: 'translateX(-50%)',
   width: '140rem',
 
@@ -204,6 +204,8 @@ export const H3 = styled('h3')(() => ({
     color: colors.white,
     fontStyle: 'italic',
     lineHeight: '0',
+    marginLeft: '-0.2rem',
+    padding: '0 0.3rem 0 0',
   },
 
   [breakpoints.extraSmallMedia]: {

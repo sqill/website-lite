@@ -11,8 +11,7 @@
         { "id": "Name", "label": "Name", "type": "text" },
         { "id": "About", "label": "Company/Sport", "type": "text" },
         { "id": "Email", "label": "Email", "type": "email" },
-        { "id": "Phone", "label": "Phone Number", "type": "number" },
-        { "id": "VAT", "label": "VAT", "type": "number" }
+        { "id": "Message", "label": "Message", "type": "textarea" }
       ],
       "button": "Let's talk",
       "feedback": {
