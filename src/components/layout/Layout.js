@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 
 import { generateOpenGraphTags } from '@sqill/utils/openGraphTags';
-import { injectgTagScript, injectLfTracker, injectgTwitterScript } from '@sqill/utils/gtag';
+import { injectgTagScript, injectLfTracker, injectChatwootScript } from '@sqill/utils/gtag';
 
 import Menu from '@sqill/components/menu';
 import Footer from '@sqill/components/footer';
@@ -24,7 +24,7 @@ const Layout = ({ title, description, keywords, children }) => {
         <link rel="manifest" href="/manifest.webmanifest" />
         {injectgTagScript()}
         {injectLfTracker()}
-        {injectgTwitterScript()}
+        {injectChatwootScript()}
       </Head>
       <Main>
         <Menu />
