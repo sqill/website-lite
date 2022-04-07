@@ -16,17 +16,22 @@
     "description": "damos ferramentas aos atletas para criar melhores vídeos de desporto, ajudando-os a serem descobertos por fâs, olheiros e marcas",
     "watch": {
       "label": "Vê o nosso produto",
-      "url": "https://youtu.be/Cyvo4SkBNXU"
+      "url": "https://youtube.com/embed/Cyvo4SkBNXU?autoplay=1"
     },
     "download": "Faz o download  grátis da APP",
-    "available": "Disponível para",
-    "andSports": "... e mais 12 desportos!"
+    "sports": {
+      "beforeText": "Disponível para",
+      "afterText": "... e mais 12 desportos!",
+      "icons": ["basketball.png", "rugby.png", "football.png", "tennis.png", "volleyball.png"]
+    }
   },
   "section1": {
     "title": "Vais ficar na sombra?",
     "description": "Torna o artista que és em campo, num fenómeno das redes sociais",
     "hero": {
-      "image": "shadow_1.png", "width": "910", "height": "688"
+      "image": "shadow_1.png",
+      "width": "910",
+      "height": "688"
     }
   },
   "section2": {
@@ -42,10 +47,7 @@
       "image": "home_phone_1.png",
       "width": "311",
       "height": "632",
-      "options": [
-        { "label": "Má qualidade" },
-        { "label": "Não adaptado a mobile" }
-      ]
+      "options": [{ "label": "Má qualidade" }, { "label": "Não adaptado a mobile" }]
     },
     "with": {
       "title": "Vídeo com sqill",
@@ -65,11 +67,46 @@
   },
   "section3": {
     "options": [
-      { "key": "Transforma", "title": "os teus vídeos de desporto para mobile", "description": "USA FERRAMENTAS COMO O NOSSO DYNAMIC ZOOM OU O REPLAY EM SLOW MOTION PARA MELHORARES A QUALIDADE DOS TEUS VÍDEOS E ADAPTARES A TIKTOK OU A INSTAGRAM REELS", "image": "home_1.png", "width": "474", "height": "418" },
-      { "key": "Usa", "title": "os melhores efeitos de desporto e partilha nas tuas redes sociais", "description": "TROCAR A BOLA POR UMA ESFERA EM FOGO? MARCAR UM GOLO E EXPLODIR COM A BALIZA? DÁ VIDA AOS TEUS VÍDEOS. MOSTRA QUE ÉS ARTISTA DENTRO E FORA DE CAMPO.", "image": "home_2.png", "width": "600", "height": "430" },
-      { "key": "Exibe", "title": "o teu perfil", "description": "CRIA O TEU PERFIL DE ATLETA, PARTILHANDO COM O MUNDO DO DESPORTO AS TUAS CARATERÍSTICAS DENTRO E FORA DE CAMPO", "image": "home_3.png", "width": "474", "height": "418" },
-      { "key": "Constrói", "title": "o teu portfólio de sqills", "description": "AS SQILLS SÃO VÍDEOS DE PEQUENO FORMATO DE MOMENTOS DE JOGO. ORGANIZA E ETERNIZA OS HIGHLIGHTS DA TUA CARREIRA", "image": "home_4.png", "width": "474", "height": "418" },
-      { "key": "Sê avaliado", "title": "pelos adeptos e descoberto por agentes, olheiros, treinadores e marcas", "description": "AS MELHORES SQILLS VÃO PARA O FEED E SÃO AVALIADAS POR ADEPTOS. USA A SQILL PARA TE EXPORES E SERES CONTACTADO PELO MUNDO DO DESPORTO", "image": "home_5.png", "width": "500", "height": "458" }
+      {
+        "key": "Transforma",
+        "title": "os teus vídeos de desporto para mobile",
+        "description": "USA FERRAMENTAS COMO O NOSSO DYNAMIC ZOOM OU O REPLAY EM SLOW MOTION PARA MELHORARES A QUALIDADE DOS TEUS VÍDEOS E ADAPTARES A TIKTOK OU A INSTAGRAM REELS",
+        "image": "home_1.png",
+        "width": "474",
+        "height": "418"
+      },
+      {
+        "key": "Usa",
+        "title": "os melhores efeitos de desporto e partilha nas tuas redes sociais",
+        "description": "TROCAR A BOLA POR UMA ESFERA EM FOGO? MARCAR UM GOLO E EXPLODIR COM A BALIZA? DÁ VIDA AOS TEUS VÍDEOS. MOSTRA QUE ÉS ARTISTA DENTRO E FORA DE CAMPO.",
+        "image": "home_2.png",
+        "width": "600",
+        "height": "430"
+      },
+      {
+        "key": "Exibe",
+        "title": "o teu perfil",
+        "description": "CRIA O TEU PERFIL DE ATLETA, PARTILHANDO COM O MUNDO DO DESPORTO AS TUAS CARATERÍSTICAS DENTRO E FORA DE CAMPO",
+        "image": "home_3.png",
+        "width": "474",
+        "height": "418"
+      },
+      {
+        "key": "Constrói",
+        "title": "o teu portfólio de sqills",
+        "description": "AS SQILLS SÃO VÍDEOS DE PEQUENO FORMATO DE MOMENTOS DE JOGO. ORGANIZA E ETERNIZA OS HIGHLIGHTS DA TUA CARREIRA",
+        "image": "home_4.png",
+        "width": "474",
+        "height": "418"
+      },
+      {
+        "key": "Sê avaliado",
+        "title": "pelos adeptos e descoberto por agentes, olheiros, treinadores e marcas",
+        "description": "AS MELHORES SQILLS VÃO PARA O FEED E SÃO AVALIADAS POR ADEPTOS. USA A SQILL PARA TE EXPORES E SERES CONTACTADO PELO MUNDO DO DESPORTO",
+        "image": "home_5.png",
+        "width": "500",
+        "height": "458"
+      }
     ]
   },
   "section4": {

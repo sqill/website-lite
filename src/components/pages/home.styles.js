@@ -440,12 +440,9 @@ export const SportsDiv = styled('div')(() => ({
   transform: 'translateX(-50%)',
   width: '100rem',
 
-  '> div': {
-    flex: '1 0 auto',
-  },
-
   '> span': {
-    margin: '0 6rem',
+    margin: '0 2rem',
+    minWidth: '3rem',
   },
 
   [breakpoints.extraSmallMedia]: {
@@ -459,4 +456,34 @@ export const SportsDiv = styled('div')(() => ({
   [breakpoints.smallMedia]: {
     padding: '0 4rem',
   },
+}));
+
+export const SportsIcons = styled('div')(() => ({
+  display: 'flex',
+  flex: '1 0 auto',
+  justifyContent: 'space-around',
+  margin: '0 5%',
+
+  [breakpoints.extraSmallMedia]: {
+    margin: '2rem 0',
+    width: '100%',
+  },
+}));
+
+export const IframeWrapper = styled('div')(() => ({
+  overflow: 'hidden',
+  paddingTop: '56.25%',
+  position: 'relative',
+  width: '90vw',
+}));
+
+export const Iframe = styled('iframe')(() => ({
+  border: 0,
+  position: 'absolute',
+  left: 0,
+  top: 0,
+  bottom: 0,
+  right: 0,
+  height: '100%',
+  width: '100%',
 }));
