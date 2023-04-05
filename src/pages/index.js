@@ -1,242 +1,176 @@
 import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useRouter } from 'next/router';
 import Image from 'next/image';
-import Link from 'next/link';
-
-import constants from '@sqill/utils/constants';
 
 import Layout from '@sqill/components/layout';
-import FloatingCTA from '@sqill/components/floating-cta';
+import Form from '@sqill/components/form';
+import Button from '@sqill/components/button';
 import Modal from '@sqill/components/modal';
 
 import {
-  Tabs,
-  Tab,
-  Label,
-  H1 as FaqsH1,
-  Div as FaqsDiv,
-} from '@sqill/components/pages/faqs.styles';
-
-import {
   Section,
-  SectionShadow,
-  SectionCompare,
-  SectionContent,
   Wrapper,
-  CompareWrapper,
-  PhoneWrapper,
-  StepWrapper,
-  VideoWrapper,
-  Bg,
-  BgCompare,
-  HeroImage,
-  ShadowImage,
+  Hero,
+  HeroContent,
+  ImageWrapper,
   StepImage,
+  StepWrapper,
+  IconsWrapper,
+  IconGrid,
+  IconImage,
   H1,
   H2,
-  SquareDiv,
-  ButtonWatch,
-  StoreButtons,
-  SportsDiv,
-  SportsIcons,
-  IframeWrapper,
-  Iframe,
+  StyledH2,
+  H3,
+  StyledP,
+  Div,
+  Partners,
+  PartnersLogos,
+  PartnerLogo,
+  PartnersSubtitle,
+  P,
 } from '@sqill/components/pages/home.styles';
 
 const Home = () => {
-  const { locale } = useRouter();
   const { t } = useTranslation('home');
   const meta = t('meta');
   const hero = t('header.hero');
-  const sportsIcons = t('header.sports.icons');
+  const form = t('form');
+  const trustedBy = t('trustedBy');
   const section1 = t('section1');
   const section2 = t('section2');
   const section3 = t('section3');
-  const section4 = t('section4');
 
-  const [watchVideo, setWatchVideo] = useState(false);
-
-  const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-
-    return array;
-  };
-
-  const handleOnWatchClick = () => {
-    setWatchVideo(true);
-  };
+  const [showForm, setShowForm] = useState(false);
 
   return (
     <Layout {...meta}>
-      <FloatingCTA />
-
       <Section>
         <Wrapper>
-          <Bg>
-            {shuffleArray(hero).map(({ video, image, width, height }, idx) => (
-              <HeroImage key={idx}>
-                <video
-                  autoPlay
-                  playsInline
-                  loop
-                  muted
-                  src={`/videos/${video}`}
-                  poster={`/images/home/${image}`}
+          <Hero>
+            <HeroContent>
+              <H1>
+                <Image src="/images/logo_gradient.svg" alt="sqill logo" width={110} height={110} />
+                {t('header.title')}
+              </H1>
+              <H2>{t('header.subtitle')}</H2>
+              <Div>{t('header.description')}</Div>
+
+              <Partners>
+                <PartnersLogos>
+                  {trustedBy.options.map((partner) => (
+                    <PartnerLogo>
+                      <Image
+                        src={`/images/4biz/${partner.image}`}
+                        alt={partner.name}
+                        width={partner.width}
+                        height={partner.height}
+                      />
+                    </PartnerLogo>
+                  ))}
+                </PartnersLogos>
+                <PartnersSubtitle>{trustedBy.title}</PartnersSubtitle>
+              </Partners>
+
+              <Button onClick={() => setShowForm(true)} label={form.button} />
+            </HeroContent>
+            <ImageWrapper>
+              <Image
+                src={`/images/4biz/${hero.image}`}
+                alt="sqill logo"
+                width={hero.width}
+                height={hero.height}
+              />
+            </ImageWrapper>
+          </Hero>
+        </Wrapper>
+
+        {/* TODO: uncomment to show partners section */}
+        {/* <Wrapper>
+          <StyledH2>{trustedBy.title}</StyledH2>
+          <PartnersLogos>
+            {trustedBy.options.map((partner) => (
+              <PartnerLogo>
+                <Image
+                  src={`/images/4biz/${partner.image}`}
+                  alt={partner.name}
+                  width={partner.width}
+                  height={partner.height}
                 />
-              </HeroImage>
+              </PartnerLogo>
             ))}
-          </Bg>
-          <H1>
-            <Image
-              src="/images/logo_white_gradient.svg"
-              alt="sqill logo"
-              width={390}
-              height={130}
-            />
-            <span>{t('header.subtitle')}</span>
-          </H1>
-          <SquareDiv dangerouslySetInnerHTML={{ __html: t('header.description') }} />
-          <ButtonWatch onClick={handleOnWatchClick}>{t('header.watch.label')}</ButtonWatch>
-          <H2>{t('header.download')}</H2>
-          <StoreButtons>
-            <Link href={constants.APP_STORE_URL}>
-              <a>
-                <Image
-                  src={`/images/app_store_${locale}.svg`}
-                  alt="download app store"
-                  width={120}
-                  height={40}
-                  layout="fixed"
-                />
-              </a>
-            </Link>
-            <Link href={constants.PLAY_STORE_URL}>
-              <a>
-                <Image
-                  src={`/images/google_play_${locale}.png`}
-                  alt="download play store"
-                  width={134}
-                  height={40}
-                  layout="fixed"
-                />
-              </a>
-            </Link>
-          </StoreButtons>
-          <SportsDiv>
-            <div>{t('header.sports.beforeText')}</div>
-            <SportsIcons>
-              {sportsIcons.map((icon, idx) => (
-                <span key={idx}>
-                  <Image src={`/images/sports/${icon}`} width={30} height={30} quality={100} />
-                </span>
+          </PartnersLogos>
+          <Div>{trustedBy.description}</Div>
+        </Wrapper> */}
+
+        <Wrapper>
+          <StyledH2>{section1.title}</StyledH2>
+          <Hero>
+            <IconsWrapper>
+              {section1.options.map(({ title, description, image, width, height }, idx) => (
+                <IconGrid key={idx}>
+                  <IconImage width={width} height={height}>
+                    <Image src={`/images/4biz/${image}`} alt="" width={width} height={height} />
+                  </IconImage>
+                  <H3>{title}</H3>
+                  <StyledP>{description}</StyledP>
+                </IconGrid>
               ))}
-            </SportsIcons>
-            <div>{t('header.sports.afterText')}</div>
-          </SportsDiv>
+            </IconsWrapper>
+          </Hero>
         </Wrapper>
-      </Section>
 
-      <SectionShadow>
         <Wrapper>
-          <h2>{t('section1.title')}</h2>
-          <ShadowImage>
-            <Image
-              src={`/images/home/${section1.hero.image}`}
-              alt=""
-              width={section1.hero.width}
-              height={section1.hero.height}
-              quality={90}
-            />
-          </ShadowImage>
-          <p>{t('section1.description')}</p>
-        </Wrapper>
-      </SectionShadow>
-
-      <SectionCompare>
-        <Wrapper>
-          <BgCompare>
-            <Image
-              src={`/images/home/${section2.bg.image}`}
-              alt=""
-              width={section2.bg.width}
-              height={section2.bg.height}
-              quality={90}
-            />
-          </BgCompare>
-          <h2>{t('section2.title')}</h2>
-          <CompareWrapper>
-            <div>
-              <PhoneWrapper>
-                <ul>
-                  {section2.without.options.map(({ label }, idx) => (
-                    <li key={idx}>{label}</li>
-                  ))}
-                </ul>
-                <h6>{section2.without.title}</h6>
-              </PhoneWrapper>
-              <VideoWrapper>
-                <video autoPlay playsInline loop muted src={`/videos/${section2.without.video}`} />
-              </VideoWrapper>
-            </div>
-            <div>
-              <PhoneWrapper showTicks>
-                <ul>
-                  {section2.with.options.map(({ label }, idx) => (
-                    <li key={idx}>{label}</li>
-                  ))}
-                </ul>
-                <h6>{section2.with.title}</h6>
-              </PhoneWrapper>
-              <VideoWrapper>
-                <video autoPlay playsInline loop muted src={`/videos/${section2.with.video}`} />
-              </VideoWrapper>
-            </div>
-          </CompareWrapper>
-        </Wrapper>
-      </SectionCompare>
-
-      <SectionContent id="athlete">
-        <Wrapper>
-          {section3.options.map(({ key, title, description, image, width, height }, idx) => (
+          <StyledH2>{section2.title}</StyledH2>
+          {section2.options.map(({ key, title, description, image, width, height }, idx) => (
             <StepWrapper key={idx} isOdd={idx % 2}>
               <div>
-                <h3>
-                  <span>{key}</span>
-                  {title}
-                </h3>
+                <H3>
+                  <div>{key}</div>
+                  <span>{title}</span>
+                </H3>
                 <div dangerouslySetInnerHTML={{ __html: description }} />
               </div>
               <StepImage>
-                <Image src={`/images/home/${image}`} alt="" width={width} height={height} />
+                <Image src={`/images/4biz/${image}`} alt="" width={width} height={height} />
               </StepImage>
             </StepWrapper>
           ))}
         </Wrapper>
 
-        <Wrapper>
-          <FaqsH1>{t('section4.title')}</FaqsH1>
-          <Tabs>
-            {section4.options.map(({ label, content }, idx) => (
-              <Tab key={idx}>
-                <input type="radio" id={idx} name="faqs" />
-                <Label htmlFor={idx}>{label}</Label>
-                <FaqsDiv dangerouslySetInnerHTML={{ __html: content }} />
-              </Tab>
+        <Wrapper isSpaced>
+          <StyledH2>{section3.title}</StyledH2>
+          <IconsWrapper>
+            {section3.options.map(({ description, image, width, height }, idx) => (
+              <IconGrid key={idx}>
+                <Image src={`/images/4biz/${image}`} alt="" width={width} height={height} />
+                <P>{description}</P>
+              </IconGrid>
             ))}
-          </Tabs>
+          </IconsWrapper>
         </Wrapper>
-      </SectionContent>
 
-      {watchVideo && (
-        <Modal onClick={() => setWatchVideo(false)}>
-          <IframeWrapper>
-            <Iframe src={t('header.watch.url')} />
-          </IframeWrapper>
+        <Wrapper>
+          <Form
+            fields={form.fields}
+            button={form.submitMore}
+            tableName="4biz"
+            successMessage={`${form.feedback.title} ${form.feedback.text}`}
+            errorMessage={form.feedback.error}
+          />
+        </Wrapper>
+      </Section>
+
+      {showForm && (
+        <Modal onClick={() => setShowForm(false)}>
+          <Form
+            fields={form.fields}
+            button={form.submitSend}
+            tableName="4biz"
+            successMessage={`${form.feedback.title} ${form.feedback.text}`}
+            errorMessage={form.feedback.error}
+          />
         </Modal>
       )}
     </Layout>
@@ -245,7 +179,7 @@ const Home = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['menu', 'footer', 'home', 'floatingCTA'])),
+    ...(await serverSideTranslations(locale, ['menu', 'footer', 'home'])),
   },
 });
 

@@ -12,6 +12,12 @@ export const H1 = {
   letterSpacing: '-0.02em',
 };
 
+export const H1_Logo = {
+  ...baseStyles('6rem', weight.extrabold, '7.2rem'),
+  fontStyle: 'italic',
+  letterSpacing: '-0.02em',
+};
+
 export const H1_S1 = {
   ...baseStyles('4.6rem', weight.extrabold, '5.5rem'),
   fontStyle: 'italic',
@@ -37,6 +43,12 @@ export const H2_S2 = {
 
 export const H3 = {
   ...baseStyles('1.5rem', weight.extrabold, '1.8rem'),
+  fontStyle: 'italic',
+  letterSpacing: '-0.02em',
+};
+
+export const H3_S1 = {
+  ...baseStyles('1.8rem', weight.extrabold, '2.2rem'),
   fontStyle: 'italic',
   letterSpacing: '-0.02em',
 };
@@ -68,4 +80,8 @@ export const P_S3_R = {
 
 export const P_S3_M = {
   ...baseStyles('1.1rem', weight.medium, '1.7rem'),
+};
+
+export const P_S3_B = {
+  ...baseStyles('1.1rem', weight.bold, '1.7rem'),
 };

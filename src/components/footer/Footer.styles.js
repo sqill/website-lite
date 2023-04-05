@@ -7,11 +7,11 @@ import * as typo from '@sqill/theme/typography';
 export const FooterWrapper = styled('footer')(() => ({
   ...typo.P_S3_R,
   backgroundColor: colors.black,
-  color: colors.whiteA60,
+  color: colors.gray1,
 
   a: {
     ...typo.P_S3_R,
-    color: colors.whiteA60,
+    color: colors.gray1,
     textDecoration: 'none',
 
     '&:focus, &:hover': {
@@ -70,11 +70,15 @@ export const Div = styled('div')(() => ({
 }));
 
 export const H6 = styled('h6')(() => ({
-  ...typo.P_S3_R,
-  color: colors.brand,
+  ...typo.P_S3_B,
+  color: colors.gray0,
+  textTransform: 'uppercase',
 }));
 
 export const Copy = styled('div')(() => ({
+  ...typo.P_S3_B,
+  fontStyle: 'italic',
+
   [breakpoints.lteSmallMedia]: {
     marginTop: '3rem',
   },
