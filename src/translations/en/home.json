@@ -1,161 +1,136 @@
 {
   "meta": {
     "title": "sqill | unleashing sports talent",
-    "description": "sqill is the video app for athletes. We are disrupting the sports industry through short-form vídeos (sqills) and artificial intelligence, showcasing talent (athletes) and connecting them with demand (clubs, agents and brands).",
-    "keywords": "sports, athletes, sportstech, sqill, video, app, android, ios, talent, football, technology, AI, video, portugal, startup, clubs, agents, brands, players, federations, associations, streaming, mobile, squill"
+    "description": "",
+    "keywords": ""
   },
   "header": {
-    "hero": [
-      { "video": "home-futebol.mp4", "image": "hero1.png", "width": "480", "height": "1080" },
-      { "video": "home-basket.mp4", "image": "hero2.png", "width": "480", "height": "1080" },
-      { "video": "home-padel.mp4", "image": "hero3.png", "width": "480", "height": "1080" },
-      { "video": "home-rugby.mp4", "image": "hero4.png", "width": "480", "height": "1080" }
-    ],
     "title": "sqill",
-    "subtitle": "the video app for athletes",
-    "description": "We give athletes the video tools to create amazing sports content, helping them get discovered by fans, finders and brands.",
-    "watch": {
-      "label": "Watch product video",
-      "url": "https://youtube.com/embed/kN7f6NMfkyE?autoplay=1"
-    },
-    "download": "Download the app for free",
-    "sports": {
-      "beforeText": "Available to",
-      "afterText": "and twelve more sports",
-      "icons": ["basketball.png", "rugby.png", "football.png", "tennis.png", "volleyball.png"]
+    "subtitle": "Execution tool for social media.",
+    "description": "sqill is helping brands creating up to 5x more content for their social media, maintaining resources and brand consistency and innovation.",
+    "hero": {
+      "image": "4biz_hero.png",
+      "width": "623",
+      "height": "427"
     }
+  },
+  "trustedBy": {
+    "title": "trusted by these and other social media kings",
+    "description": "Extra text.",
+    "options": [
+      {
+        "name": "FC Porto",
+        "image": "partner_fcp.png",
+        "width": "31",
+        "height": "41"
+      },
+      {
+        "name": "MC Sonae",
+        "image": "partner_sonae.png",
+        "width": "88",
+        "height": "41"
+      }
+    ]
   },
   "section1": {
-    "title": "Will you stay in the shadow?",
-    "description": "Transform the artist that you are inside the field into a phenomenon on social media.",
-    "hero": {
-      "image": "shadow_1.png",
-      "width": "910",
-      "height": "688"
-    }
+    "title": "HOW IT WORKS",
+    "options": [
+      {
+        "title": "READY?",
+        "description": "Upload your brand on our web portal",
+        "image": "image_ready.png",
+        "width": "454",
+        "height": "284"
+      },
+      {
+        "title": "SET",
+        "description": "Execute on your phone",
+        "image": "image_set.png",
+        "width": "364",
+        "height": "284"
+      },
+      {
+        "title": "GO",
+        "description": "Post to any social media",
+        "image": "image_go.png",
+        "width": "364",
+        "height": "284"
+      }
+    ]
   },
   "section2": {
-    "title": "The sole video edition mobile tool for sports!",
-    "bg": {
-      "image": "home_bg_1.png",
-      "width": "1024",
-      "height": "776"
-    },
-    "without": {
-      "title": "Video without sqill",
-      "video": "without-sqill.mp4",
-      "image": "home_phone_1.png",
-      "width": "311",
-      "height": "632",
-      "options": [{ "label": "Low quality" }, { "label": "Not fit for mobile" }]
-    },
-    "with": {
-      "title": "Video with sqill",
-      "video": "with-sqill.mp4",
-      "image": "home_phone_2.png",
-      "width": "309",
-      "height": "634",
-      "options": [
-        { "label": "Full Screen" },
-        { "label": "Effects" },
-        { "label": "Watermarks" },
-        { "label": "Advertising" },
-        { "label": "Original quality" },
-        { "label": "Slow motion replay" }
-      ]
-    }
+    "title": "It is like editing content on instagram, but for brands.",
+    "options": [
+      {
+        "key": "1",
+        "title": "Cover live events on social media",
+        "description": "sqill lets your teams create content faster, organized and in scale. Anyone can create on-brand visual content with pre-approved templates.",
+        "image": "image_step1.png",
+        "width": "592",
+        "height": "586"
+      },
+      {
+        "key": "2",
+        "title": "Execute faster and free-up designers",
+        "description": "Sqill helps your brand reduce time spent on social media posts by decentralizing content execution and empowering your social media and digital teams.",
+        "image": "image_step2.png",
+        "width": "544",
+        "height": "543"
+      },
+      {
+        "key": "3",
+        "title": "Maximize inovation on stories",
+        "description": "The era of authenticity and interactivity. Use sqill to plan raw backstage content and Take your social media accounts to new heights with our 3D, AR and video tools.",
+        "image": "image_step3.png",
+        "width": "544",
+        "height": "543"
+      },
+      {
+        "key": "4",
+        "title": "Brand ambassadoring",
+        "description": "Sqill gives you the tools to co-create with your influencers, employees, clients and fans on instagram and tiktok.",
+        "image": "image_step4.png",
+        "width": "520",
+        "height": "460"
+      }
+    ]
   },
   "section3": {
+    "title": "IS YOUR BRAND A POTENTIAL USE CASE?",
     "options": [
       {
-        "key": "Make",
-        "title": "your sports videos fit for Mobile",
-        "description": "Use our tools such as Dynamic Zoom or Replay in Slow motion to improve the quality of your videos and shape them to be used in TikTok or as Instagram Reels.",
-        "image": "home_1.png",
-        "width": "474",
-        "height": "418"
+        "description": "SPORT, MEDIA AND ENTERTAINMENT",
+        "image": "icon_ticket.png",
+        "width": "110",
+        "height": "110"
       },
       {
-        "key": "Use",
-        "title": "the best sports effects and share them on your social media!",
-        "description": "Replace the ball with a Fireball? Score a goal and cause an explosion? Give life to your videos! Show the artist that you are in and outside the field.",
-        "image": "home_2.png",
-        "width": "600",
-        "height": "430"
+        "description": "B2C TOP BRANDS",
+        "image": "icon_label.png",
+        "width": "110",
+        "height": "110"
       },
       {
-        "key": "Show",
-        "title": "your profile!",
-        "description": "Create your Athlete profile and share with the world of sports your abilities and off-pitch characteristics",
-        "image": "home_3.png",
-        "width": "474",
-        "height": "418"
-      },
-      {
-        "key": "Build",
-        "title": "your portfolio of sqills ",
-        "description": "sqills are small videos of your performances. Organize and eternalize your career highlights.",
-        "image": "home_4.png",
-        "width": "474",
-        "height": "418"
-      },
-      {
-        "key": "Be evaluated",
-        "title": "by fans and be discovered by agents, scouts, coaches, and brands.",
-        "description": "The best sqills will appear in the feed and be seen by fans on a global scale. Use sqill to expose your talent and be reached by the world of sports.",
-        "image": "home_5.png",
-        "width": "500",
-        "height": "458"
+        "description": "SOCIAL COMMERCE",
+        "image": "icon_social.png",
+        "width": "145",
+        "height": "100"
       }
     ]
   },
-  "section4": {
-    "title": "Do you have any questions about sqill?",
-    "options": [
-      {
-        "label": "I'm an athlete. Why should I download sqill?",
-        "content": "There are numerous reasons and functionalities, but above all:<ul><li>To transform your sports videos into amazing content that you can share on your social media, showing the artist that you are in and outside the field</li><li>to build your online video portfolio: sqill is the best option to have an updated profile with all your historical data available to any agent, scout, coach, and brand check</li><li>To participate in challenges promoted by sports brands and have the opportunity of winning many prizes</li><li>and much more (you may expect fresh news in a near future)</li></ul>"
-      },
-      {
-        "label": "What video edition tools are available?",
-        "content": "sqill has an advanced video editor for mobile. Bring your game records (or training videos) to a whole new level. Our dynamic zoom allows you to transform a horizontal shaped video into a mobile one following only the place of action. Replay in slow motion? Of course, we have it. You may also use our spotlight option to identify yourself. Or if you prefer something funnier: why not change the ball with a burger? Or why not cause an explosion, after you score a great goal? We are launching new effects and other video functionalities every week. And the best thing is that we created a video editor easy to use by any person - with the same simplicity that you add a filter on Instagram, you create motion effect on sqill."
-      },
-      {
-        "label": "What is the type of athlete that should use sqill?",
-        "content": "Any athlete that wants to get more visibility in this digital era. You can use any type of videos: from your competitions, trainings, or plays with friends. We want to guarantee that the art that you perform on grass, asphalt, clay, or water is transformed into great content to be shared in your social media. Deep down, any athlete whose ambition is to become a digital artist."
-      },
-      {
-        "label": "What sports are available?",
-        "content": "At the moment, we have more than 20 different sports: Football, Basketball, Padel, Rugby, Gymnastics, Volleyball, Handball, Golf, Roller Hockey, Tennis, Surf, Skateboard, Futsal, American Football, Motorcycling, Table Tennis, Cycling, Jiu-jitsu, Wrestling, Judo, Boxe, Karate, Taekwondo, and Capoeira. Do you want to suggest a new sport? We are always open to new suggestions!"
-      },
-      {
-        "label": "Where is sqill available?",
-        "content": "For now, sqill is only available in Portugal and Brazil. Still in this year, we will expand to several new countries."
-      },
-      {
-        "label": "How do I pay to use sqill?",
-        "content": "Downloading sqill is free. Any athlete can create his profile and upload their videos. However, the basic profile has a monthly limit of videos that can be edited. It will cost 5€ per month, to upgrade your profile to premium."
-      },
-      {
-        "label": "Which videos will appear in the feed  “FOR YOU”?",
-        "content": "Each user will have a personalized feed, according to their goals and preferred sports. Our algorithm guarantees that the most suitable videos and athletes are presented to you. The algorithm has into account, among others: your location, your sports settings, the reviews by the fans, etc."
-      },
-      {
-        "label": "I love sports, but I am not an athlete. Is sqill useful to me?",
-        "content": "Of course. Imagine a Tiktok composed only of sports videos. Do you see anything funnier than that, to occupy your free time? You can interact and rate any video available - helping us to rank the best videos and athletes on the platform."
-      }
+  "form": {
+    "fields": [
+      { "id": "Name", "label": "Name", "type": "text" },
+      { "id": "About", "label": "Company", "type": "text" },
+      { "id": "Email", "label": "Email", "type": "email" }
     ],
-    "cta": {
-      "description": "Queres saber mais? Procura nas nossas",
-      "label": "Perguntas Frequentes (FAQ)",
-      "url": "/faqs"
+    "button": "Let's talk",
+    "submitSend": "Send",
+    "submitMore": "Talk to us",
+    "feedback": {
+      "title": "New registration submitted with success.",
+      "text": "We will send you an email with the next steps",
+      "error": "Something went wrong, please try again"
     }
-  },
-  "section5": {
-    "title": "Download the app for free",
-    "cta": [
-      { "store": "play", "label": "Download the app for free", "url": "PLAY_STORE_URL" },
-      { "store": "app", "label": "Download the app for free", "url": "APP_STORE_URL" }
-    ]
   }
 }

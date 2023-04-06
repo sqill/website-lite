@@ -5,157 +5,132 @@
     "keywords": ""
   },
   "header": {
-    "hero": [
-      { "video": "home-futebol.mp4", "image": "hero1.png", "width": "480", "height": "1080" },
-      { "video": "home-basket.mp4", "image": "hero2.png", "width": "480", "height": "1080" },
-      { "video": "home-padel.mp4", "image": "hero3.png", "width": "480", "height": "1080" },
-      { "video": "home-rugby.mp4", "image": "hero4.png", "width": "480", "height": "1080" }
-    ],
     "title": "sqill",
-    "subtitle": "a app de vídeo dos atletas",
-    "description": "damos ferramentas aos atletas para criar melhores vídeos de desporto, ajudando-os a serem descobertos por fâs, olheiros e marcas",
-    "watch": {
-      "label": "Vê o nosso produto",
-      "url": "https://youtube.com/embed/Cyvo4SkBNXU?autoplay=1"
-    },
-    "download": "Faz o download  grátis da APP",
-    "sports": {
-      "beforeText": "Disponível para",
-      "afterText": "... e mais 12 desportos!",
-      "icons": ["basketball.png", "rugby.png", "football.png", "tennis.png", "volleyball.png"]
+    "subtitle": "Plataforma de criação de conteúdo para social media",
+    "description": "A sqill ajuda marcas a criar até 5x mais contéudo visual para social media, mantendo recursos e maximizando inovação e consistência de marca.",
+    "hero": {
+      "image": "4biz_hero.png",
+      "width": "623",
+      "height": "427"
     }
+  },
+  "trustedBy": {
+    "title": "Utilizada por diversos “content kings”",
+    "description": "Texto extra.",
+    "options": [
+      {
+        "name": "FC Porto",
+        "image": "partner_fcp.png",
+        "width": "31",
+        "height": "41"
+      },
+      {
+        "name": "MC Sonae",
+        "image": "partner_sonae.png",
+        "width": "88",
+        "height": "41"
+      }
+    ]
   },
   "section1": {
-    "title": "Vais ficar na sombra?",
-    "description": "Torna o artista que és em campo, num fenómeno das redes sociais",
-    "hero": {
-      "image": "shadow_1.png",
-      "width": "910",
-      "height": "688"
-    }
+    "title": "COMO FUNCIONA",
+    "options": [
+      {
+        "title": "READY?",
+        "description": "Faz o upload dos elementos de marca no portal web",
+        "image": "image_ready.png",
+        "width": "454",
+        "height": "284"
+      },
+      {
+        "title": "SET",
+        "description": "Executa no telemóvel",
+        "image": "image_set.png",
+        "width": "364",
+        "height": "284"
+      },
+      {
+        "title": "GO",
+        "description": "Publica diretamente na rede social",
+        "image": "image_go.png",
+        "width": "364",
+        "height": "284"
+      }
+    ]
   },
   "section2": {
-    "title": "A única ferramenta mobile de edição de vídeo de desporto",
-    "bg": {
-      "image": "home_bg_1.png",
-      "width": "1024",
-      "height": "776"
-    },
-    "without": {
-      "title": "Vídeo sem sqill",
-      "video": "without-sqill.mp4",
-      "image": "home_phone_1.png",
-      "width": "311",
-      "height": "632",
-      "options": [{ "label": "Má qualidade" }, { "label": "Não adaptado a mobile" }]
-    },
-    "with": {
-      "title": "Vídeo com sqill",
-      "video": "with-sqill.mp4",
-      "image": "home_phone_2.png",
-      "width": "309",
-      "height": "634",
-      "options": [
-        { "label": "Full screen" },
-        { "label": "Animações" },
-        { "label": "Marcas de água" },
-        { "label": "Publicidade" },
-        { "label": "Qualidade original" },
-        { "label": "Slow motion replay" }
-      ]
-    }
+    "title": "É como editar conteúdo no instagram... mas para marcas.",
+    "options": [
+      {
+        "key": "1",
+        "title": "Faz a cobertura do dia de evento",
+        "description": "A sqill permite que as equipas criem conteúdo de forma mais rápida, organizada e em escala. Qualquer membro pode criar conteúdo visual on-brand através de templates préaprovados.",
+        "image": "image_step1.png",
+        "width": "592",
+        "height": "586"
+      },
+      {
+        "key": "2",
+        "title": "Otimização dos processos de criação de conteúdo",
+        "description": "Com a sqill o tempo investido em criação de conteúdo reduz drasticamente com a descentralização da execução do conteúdo e maior autonomia das equipas de social media e digital.",
+        "image": "image_step2.png",
+        "width": "544",
+        "height": "543"
+      },
+      {
+        "key": "3",
+        "title": "Inovação nos stories",
+        "description": "Estamos na era da autenticidade e interação. As marcas usam a sqill para planearem e criarem conteúdo humanizado e levarem as suas contas de social media para novos patamares com as feramentas de video, 3d e realidade aumentada da sqill.",
+        "image": "image_step3.png",
+        "width": "544",
+        "height": "543"
+      },
+      {
+        "key": "4",
+        "title": "Co-criação com a comunidade",
+        "description": "Com a sqill, as marcas co-criam conteúdo com os seus influencers, empregados, clientes e fãs no tiktok e instagram.",
+        "image": "image_step4.png",
+        "width": "520",
+        "height": "460"
+      }
+    ]
   },
   "section3": {
+    "title": "A TUA MARCA É UM POTENCIAL USE CASE?",
     "options": [
       {
-        "key": "Transforma",
-        "title": "os teus vídeos de desporto para mobile",
-        "description": "USA FERRAMENTAS COMO O NOSSO DYNAMIC ZOOM OU O REPLAY EM SLOW MOTION PARA MELHORARES A QUALIDADE DOS TEUS VÍDEOS E ADAPTARES A TIKTOK OU A INSTAGRAM REELS",
-        "image": "home_1.png",
-        "width": "474",
-        "height": "418"
+        "description": "DESPORTO, MEDIA E ENTRETENIMENTO",
+        "image": "icon_ticket.png",
+        "width": "110",
+        "height": "110"
       },
       {
-        "key": "Usa",
-        "title": "os melhores efeitos de desporto e partilha nas tuas redes sociais",
-        "description": "TROCAR A BOLA POR UMA ESFERA EM FOGO? MARCAR UM GOLO E EXPLODIR COM A BALIZA? DÁ VIDA AOS TEUS VÍDEOS. MOSTRA QUE ÉS ARTISTA DENTRO E FORA DE CAMPO.",
-        "image": "home_2.png",
-        "width": "600",
-        "height": "430"
+        "description": "MARCAS B2C",
+        "image": "icon_label.png",
+        "width": "110",
+        "height": "110"
       },
       {
-        "key": "Exibe",
-        "title": "o teu perfil",
-        "description": "CRIA O TEU PERFIL DE ATLETA, PARTILHANDO COM O MUNDO DO DESPORTO AS TUAS CARATERÍSTICAS DENTRO E FORA DE CAMPO",
-        "image": "home_3.png",
-        "width": "474",
-        "height": "418"
-      },
-      {
-        "key": "Constrói",
-        "title": "o teu portfólio de sqills",
-        "description": "AS SQILLS SÃO VÍDEOS DE PEQUENO FORMATO DE MOMENTOS DE JOGO. ORGANIZA E ETERNIZA OS HIGHLIGHTS DA TUA CARREIRA",
-        "image": "home_4.png",
-        "width": "474",
-        "height": "418"
-      },
-      {
-        "key": "Sê avaliado",
-        "title": "pelos adeptos e descoberto por agentes, olheiros, treinadores e marcas",
-        "description": "AS MELHORES SQILLS VÃO PARA O FEED E SÃO AVALIADAS POR ADEPTOS. USA A SQILL PARA TE EXPORES E SERES CONTACTADO PELO MUNDO DO DESPORTO",
-        "image": "home_5.png",
-        "width": "500",
-        "height": "458"
+        "description": "SOCIAL COMMERCE",
+        "image": "icon_social.png",
+        "width": "145",
+        "height": "100"
       }
     ]
   },
-  "section4": {
-    "title": "Tens dúvidas sobre a sqill?",
-    "options": [
-      {
-        "label": "SOU ATLETA. PORQUE DEVO FAZER O DOWNLOAD DA SQILL?",
-        "content": "Há inúmeras razões e funcionalidades mas acima de tudo:<ul><li>Para transformares os teus vídeos de desporto em conteúdo incrível partilhares nas tuas redes sociais, mostrando que és um artista dentro e fora de campo</li><li>Para construires o teu portfolio de vídeo online, a sqill é a melhor forma de teres um perfil atualizado com todo o teu histórico disponível para qualquer agente, olheiro, treinador ou marca consultar</li><li>Para participares em desafios de marcas de desporto e habilitares-te a ganhar prémios</li><li>E muito mais... (conta com novidades em breve)</li></ul>"
-      },
-      {
-        "label": "QUE FERRAMENTAS DE VÍDEO TÊM?",
-        "content": "A sqill tem um motor de edição de vídeo avançado para mobile. Levando vídeos de jogo (ou outros) para um novo patamar. O dynamic zoom permite transformar um vídeo em formato horizontal num vídeo mobile, seguindo a bola ou o jogador. O replay em slow motion? Claro que temos! Podes também usar o spotlight para te identificares na jogada. Ou se quiseres algo mais divertido: trocar a bola por um hamburger? Explodir com as redes da baliza quando marcas um golo? Todas as semanas lançamos novos efeitos e funcionalidades de vídeo. O melhor é que criámos um motor de vídeo para que qualquer pessoa consiga usar, com a mesma simplicidade com que adicionas filtros no instagram, crias motion effects na sqill."
-      },
-      {
-        "label": "QUAL O TIPO DE ATLETA QUE DEVE USAR A SQILL?",
-        "content": "Qualquer atleta que queira obter maior visibilidade nesta era digital. Atletas com vídeos de jogo ou em treino ou na praia com amigos a dar toques. Queremos garantir que a arte que fazem e filmam no relvado, ou no asfalto, ou na terra batida, ou na água se transforme em bom conteúdo nas redes sociais. No fundo, qualquer atleta que ambicione também ser um artista digital."
-      },
-      {
-        "label": "QUE DESPORTOS SUPORTAM?",
-        "content": "Neste momento contamos com mais de 20 desportos. Futebol, Basquetebol, Padel, Rugby, Ginástica, Voleibol, Handbol, Golf, Hóquei em patins, Ténis, Surf, Skateboard, Futsal, Futebol americano, Motociclismo, Ténis de mesa, Ciclismo, Jiu-jitsu, wrestling, Judo, Boxe, Karate, Taekwondo e Capoeira. Queres sugerir um novo desporto? Estamos disponíveis para ouvir!"
-      },
-      {
-        "label": "ONDE ESTÁ A SQILL DISPONÍVEL?",
-        "content": "De momento, a app da sqill está disponível em Portugal e no Brasil. Ainda este ano será disponibilizada em vários outros países."
-      },
-      {
-        "label": "PAGO PARA USAR A SQILL?",
-        "content": "O download da sqill é grátis. Qualquer atleta pode criar o seu perfil e fazer o upload dos seus vídeos. No entanto, o perfil básico tem um limite mensal de número de vídeos passíveis passíveis de serem editados. O perfil premium tem o custo de 5€ por mês."
-      },
-      {
-        "label": "QUE VÍDEOS APARECEM NO FEED “FOR YOU”?",
-        "content": "Cada utilizador tem um feed personalizado, consoante os seus objetivos na app e o seu desporto. O nosso algoritmo garante que apresentamos os vídeos e atletas mais indicados para cada utilizador. O algoritmo tem em conta, entre outros, as votações do público no vídeo, o perfil do atleta, geografia, etc…"
-      },
-      {
-        "label": "ADORO DESPORTO MAS NÃO SOU ATLETA. A SQILL É ÚTIL PARA MIM?",
-        "content": "Claro. Imagina teres um tiktok só com vídeos de desporto... vês algo mais divertido para fazer no tempo livre? Interage e vota, ajudando-nos a classificar os melhores vídeos e atletas!"
-      }
+  "form": {
+    "fields": [
+      { "id": "Name", "label": "Nome", "type": "text" },
+      { "id": "About", "label": "Empresa", "type": "text" },
+      { "id": "Email", "label": "Email", "type": "email" }
     ],
-    "cta": {
-      "description": "Queres saber mais? Procura nas nossas",
-      "label": "Perguntas Frequentes (FAQ)",
-      "url": "/faqs"
+    "button": "Vamos falar?",
+    "submitSend": "Enviar",
+    "submitMore": "Sabe mais",
+    "feedback": {
+      "title": "Novo registo efectuado com sucesso",
+      "text": "Vamos enviar por email os próximos passos!",
+      "error": "Algo correu mal, por favor tente novamente"
     }
-  },
-  "section5": {
-    "title": "Faz o download grátis",
-    "cta": [
-      { "store": "play", "label": "Faz o download grátis", "url": "PLAY_STORE_URL" },
-      { "store": "app", "label": "Faz o download grátis", "url": "APP_STORE_URL" }
-    ]
   }
 }
