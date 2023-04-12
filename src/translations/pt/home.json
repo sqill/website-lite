@@ -37,61 +37,68 @@
     "options": [
       {
         "title": "READY?",
-        "description": "Faz o upload dos elementos de marca no portal web",
+        "description1": "Faz o upload dos elementos",
+        "description2": "de marca no portal web",
         "image": "image_ready.png",
-        "width": "454",
-        "height": "284"
+        "width": "446",
+        "height": "300"
       },
       {
         "title": "SET",
-        "description": "Executa no telemóvel",
+        "description1": "Executa no",
+        "description2": "telemóvel",
         "image": "image_set.png",
-        "width": "364",
-        "height": "284"
+        "width": "446",
+        "height": "300"
       },
       {
         "title": "GO",
-        "description": "Publica diretamente na rede social",
+        "description1": "Publica diretamente",
+        "description2": "na rede social",
         "image": "image_go.png",
-        "width": "364",
-        "height": "284"
+        "width": "446",
+        "height": "300"
       }
     ]
   },
   "section2": {
-    "title": "É como editar conteúdo no instagram... mas para marcas.",
+    "title": "É como editar conteúdo no<br>instagram... mas para marcas.",
     "options": [
       {
         "key": "1",
-        "title": "Faz a cobertura do dia de evento",
+        "title1": "Faz a cobertura",
+        "title2": "do dia de evento",
         "description": "A sqill permite que as equipas criem conteúdo de forma mais rápida, organizada e em escala. Qualquer membro pode criar conteúdo visual on-brand através de templates préaprovados.",
         "image": "image_step1.png",
-        "width": "592",
-        "height": "586"
+        "width": "550",
+        "height": "550"
       },
       {
         "key": "2",
-        "title": "Otimização dos processos de criação de conteúdo",
+        "title1": "Otimização dos processos",
+        "title2": "de criação de conteúdo",
         "description": "Com a sqill o tempo investido em criação de conteúdo reduz drasticamente com a descentralização da execução do conteúdo e maior autonomia das equipas de social media e digital.",
         "image": "image_step2.png",
-        "width": "544",
-        "height": "543"
+        "width": "550",
+        "height": "550"
       },
       {
         "key": "3",
-        "title": "Inovação nos stories",
+        "title1": "Inovação",
+        "title2": "nos stories",
         "description": "Estamos na era da autenticidade e interação. As marcas usam a sqill para planearem e criarem conteúdo humanizado e levarem as suas contas de social media para novos patamares com as feramentas de video, 3d e realidade aumentada da sqill.",
         "image": "image_step3.png",
-        "width": "544",
-        "height": "543"
+        "width": "550",
+        "height": "550"
       },
       {
         "key": "4",
-        "title": "Co-criação com a comunidade",
+        "title1": "Co-criação com",
+        "title2": "a comunidade",
         "description": "Com a sqill, as marcas co-criam conteúdo com os seus influencers, empregados, clientes e fãs no tiktok e instagram.",
         "image": "image_step4.png",
-        "width": "520",
-        "height": "460"
+        "width": "550",
+        "height": "550"
       }
     ]
   },

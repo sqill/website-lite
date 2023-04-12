@@ -37,12 +37,18 @@ export const H2 = {
 };
 
 export const H2_S2 = {
-  ...baseStyles('2.8rem', weight.extrabold, '3.4rem'),
+  ...baseStyles('2.4rem', weight.extrabold, '2.9rem'),
   letterSpacing: '-0.02em',
 };
 
 export const H3 = {
   ...baseStyles('1.5rem', weight.extrabold, '1.8rem'),
+  fontStyle: 'italic',
+  letterSpacing: '-0.02em',
+};
+
+export const H3_B = {
+  ...baseStyles('1.5rem', weight.bold, '1.8rem'),
   fontStyle: 'italic',
   letterSpacing: '-0.02em',
 };

@@ -6,7 +6,7 @@ import * as typo from '@sqill/theme/typography';
 
 export const Section = styled('section')(() => ({
   ...typo.P_R,
-  backgroundImage: `linear-gradient(${colors.gray0}, ${colors.white}, ${colors.gray0}, ${colors.white}, ${colors.gray0})`,
+  backgroundImage: `linear-gradient(${colors.gray0}, ${colors.white2}, ${colors.gray0}, ${colors.white2}, ${colors.gray0}, ${colors.white2}, ${colors.gray0})`,
   color: colors.black,
   overflow: 'hidden',
   padding: '6rem 2rem 10rem',
@@ -19,11 +19,15 @@ export const Section = styled('section')(() => ({
 export const Wrapper = styled('div')((props) => ({
   ...(props.isFlex && { display: 'flex' }),
   margin: 'auto',
-  maxWidth: '80rem',
-  padding: props.isSpaced ? '10rem 0' : '4rem 0',
+  maxWidth: '100rem',
+  padding: '6rem 0',
+
+  [breakpoints.extraSmallMedia]: {
+    padding: '5rem 0',
+  },
 }));
 
-export const Hero = styled('div')(() => ({
+export const Hero = styled('div')((props) => ({
   display: 'flex',
   marginLeft: '50%',
   marginTop: '6rem',
@@ -32,6 +36,7 @@ export const Hero = styled('div')(() => ({
   textAlign: 'center',
   transform: 'translateX(-50%)',
   width: '140rem',
+  ...(props.isNotHero && { paddingTop: '6rem' }),
 
   '> div': {
     flex: '1',
@@ -43,20 +48,37 @@ export const Hero = styled('div')(() => ({
     padding: '0',
     width: '100%',
   },
+
+  [breakpoints.lteSmallMedia]: {
+    ...(!props.isNotHero && {
+      flexDirection: 'column-reverse',
+      marginTop: '-3rem',
+    }),
+  },
 }));
 
 export const HeroContent = styled('div')(() => ({
   marginRight: '9rem',
   maxWidth: '48rem',
 
-  [breakpoints.extraSmallMedia]: {
+  [breakpoints.lteSmallMedia]: {
     marginRight: '0',
     maxWidth: '100%',
   },
 }));
 
+export const HeroTitles = styled('div')((props) => ({
+  [breakpoints.lteSmallMedia]: {
+    ...(props.hideOnMobile && { display: 'none' }),
+    margin: '-3rem 0 3rem',
+  },
+  [breakpoints.gteMediumMedia]: {
+    ...(props.hideOnDesktop && { display: 'none' }),
+  },
+}));
+
 export const ImageWrapper = styled('div')(() => ({
-  paddingTop: '6rem',
+  paddingTop: '3rem',
 
   [breakpoints.extraSmallMedia]: {
     padding: '0 0 3rem',
@@ -77,12 +99,17 @@ export const StepWrapper = styled('div')((props) => ({
   display: 'flex',
   flexDirection: props.isOdd ? 'row' : 'row-reverse',
   marginTop: '6rem',
-  justifyContent: 'space-between',
+  justifyContent: 'flex-end',
   textAlign: 'center',
   textTransform: 'uppercase',
 
   '> div:first-child': {
+    margin: '0 3rem',
     maxWidth: '30rem',
+  },
+
+  H3: {
+    marginTop: '-6rem',
   },
 
   [breakpoints.extraSmallMedia]: {
@@ -101,6 +128,10 @@ export const IconsWrapper = styled('div')(() => ({
 
     '> div': {
       marginBottom: '3rem',
+    },
+
+    H3: {
+      padding: 0,
     },
   },
 }));
@@ -129,10 +160,6 @@ export const H1 = styled('h1')(() => ({
   margin: '0 0 3rem -1rem',
   textAlign: 'left',
   textShadow: colors.shadow,
-
-  [breakpoints.extraSmallMedia]: {
-    ...typo.H2_S2,
-  },
 }));
 
 export const H2 = styled('h2')(() => ({
@@ -148,6 +175,11 @@ export const StyledH2 = styled('h2')(() => ({
   textAlign: 'center',
   textShadow: colors.shadow,
   textTransform: 'uppercase',
+
+  [breakpoints.extraSmallMedia]: {
+    ...typo.H2_S2,
+    margin: '3rem auto',
+  },
 }));
 
 export const H3 = styled('h3')(() => ({
@@ -165,27 +197,53 @@ export const H3 = styled('h3')(() => ({
 
   span: {
     ...typo.H2_S2,
+    backgroundColor: colors.brand,
     color: colors.white,
     fontStyle: 'italic',
     lineHeight: '0',
+    marginLeft: '-0.2rem',
+    padding: '0 0.3rem 0 0',
+    textShadow: 'none',
   },
 
   [breakpoints.extraSmallMedia]: {
     ...typo.H1,
+    lineHeight: '70%',
     marginBottom: '1rem',
+    paddingTop: '6rem',
 
     span: {
       ...typo.H2,
+      fontStyle: 'italic',
+      lineHeight: '0',
     },
   },
 }));
 
-export const StyledP = styled('p')(() => ({
-  ...typo.H2_S2,
-  color: colors.white,
-  fontStyle: 'italic',
-  textShadow: colors.shadow,
-  textTransform: 'uppercase',
+export const StyledP = styled('div')(() => ({
+  display: 'flex',
+  flexDirection: 'column',
+  lineHeight: '2',
+
+  span: {
+    ...typo.H2_S2,
+    backgroundColor: colors.brand,
+    color: colors.white,
+    fontStyle: 'italic',
+    lineHeight: '0',
+    marginLeft: '-0.2rem',
+    padding: '0 0.3rem 0 0',
+    textTransform: 'uppercase',
+  },
+
+  [breakpoints.extraSmallMedia]: {
+    marginTop: '1rem',
+  },
+}));
+
+export const SpanWrapper = styled('div')(() => ({
+  display: 'inline-block',
+  margin: '0 !important',
 }));
 
 export const Div = styled('div')(() => ({
@@ -194,6 +252,10 @@ export const Div = styled('div')(() => ({
   margin: '2rem 0',
   textAlign: 'justify',
   textTransform: 'uppercase',
+}));
+
+export const DivDescription = styled('div')(() => ({
+  textAlign: 'justify',
 }));
 
 export const Partners = styled('div')(() => ({
@@ -212,8 +274,9 @@ export const PartnerLogo = styled('div')(() => ({
 }));
 
 export const PartnersSubtitle = styled('h6')(() => ({
-  ...typo.H3,
+  ...typo.H3_B,
   fontStyle: 'none',
+  marginTop: '1rem',
   textTransform: 'uppercase',
 }));
 
