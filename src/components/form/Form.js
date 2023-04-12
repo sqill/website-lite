@@ -17,10 +17,14 @@ function identifyUserFromFields(data) {
 const Form = ({ fields, button, tableName, successMessage, errorMessage }) => {
   const formRef = useRef();
   const formFieldsRef = useRef({});
-  const [feedback, setFeedback] = useState('');
+  const [feedback, setFeedback] = useState();
 
-  const onFormSubmit = async (ev) => {
+  const onFormSubmit = (ev) => {
     ev.preventDefault();
+    
+    // If form was already submitted, return
+    if (feedback) return;
+    
     const data = Object.assign(
       {},
       ...fields.map((field) => ({ [field.id]: formFieldsRef.current[field.id].value })),
@@ -64,7 +68,7 @@ const Form = ({ fields, button, tableName, successMessage, errorMessage }) => {
           )}
         </Div>
       ))}
-      <Button type="submit">{button}</Button>
+      <Button type="submit" disabled={Boolean(feedback)}>{button}</Button>
       {feedback && <P>{feedback}</P>}
     </StyledForm>
   );
