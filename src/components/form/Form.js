@@ -32,7 +32,7 @@ const Form = ({ fields, button, tableName, successMessage, errorMessage }) => {
 
     identifyUserFromFields(data);
 
-    await fetch('/.netlify/functions/form-submit', {
+    return fetch('/.netlify/functions/form-submit', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
