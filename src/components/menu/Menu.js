@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'next-i18next';
-import Image from 'next/image'
+import Image from 'next/image';
 import Link from 'next/link';
 
 import pages from '@sqill/utils/routes';
@@ -17,11 +17,13 @@ const Menu = () => {
     <Div>
       <Wrapper>
         <Link href={pages.HOME}>
-          <a><Image src='/images/logo_gradient.svg' alt='sqill logo' width={40} height={40} /></a>
+          <a>
+            <Image src="/images/logo_gradient.svg" alt="sqill logo" width={40} height={40} />
+          </a>
         </Link>
-        <Nav>
+        {/* <Nav>
           {options.map(({ label, url }, idx) => <Link key={idx} href={pages[url]}>{label}</Link>)}
-        </Nav>
+        </Nav> */}
         <LanguageSwitcher />
       </Wrapper>
     </Div>

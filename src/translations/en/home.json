@@ -37,61 +37,68 @@
     "options": [
       {
         "title": "READY?",
-        "description": "Upload your brand on our web portal",
+        "description1": "Upload your brand",
+        "description2": "on our web portal",
         "image": "image_ready.png",
-        "width": "454",
-        "height": "284"
+        "width": "446",
+        "height": "300"
       },
       {
         "title": "SET",
-        "description": "Execute on your phone",
+        "description1": "Execute",
+        "description2": "on your phone",
         "image": "image_set.png",
-        "width": "364",
-        "height": "284"
+        "width": "446",
+        "height": "300"
       },
       {
         "title": "GO",
-        "description": "Post to any social media",
+        "description1": "Post to any",
+        "description2": "social media",
         "image": "image_go.png",
-        "width": "364",
-        "height": "284"
+        "width": "446",
+        "height": "300"
       }
     ]
   },
   "section2": {
-    "title": "It is like editing content on instagram, but for brands.",
+    "title": "It is like editing content on<br>instagram, but for brands.",
     "options": [
       {
         "key": "1",
-        "title": "Cover live events on social media",
+        "title1": "Cover live events",
+        "title2": "on social media",
         "description": "sqill lets your teams create content faster, organized and in scale. Anyone can create on-brand visual content with pre-approved templates.",
         "image": "image_step1.png",
-        "width": "592",
-        "height": "586"
+        "width": "550",
+        "height": "550"
       },
       {
         "key": "2",
-        "title": "Execute faster and free-up designers",
+        "title1": "Execute faster and",
+        "title2": "free-up designers",
         "description": "Sqill helps your brand reduce time spent on social media posts by decentralizing content execution and empowering your social media and digital teams.",
         "image": "image_step2.png",
-        "width": "544",
-        "height": "543"
+        "width": "550",
+        "height": "550"
       },
       {
         "key": "3",
-        "title": "Maximize inovation on stories",
+        "title1": "Maximize inovation",
+        "title2": "on stories",
         "description": "The era of authenticity and interactivity. Use sqill to plan raw backstage content and Take your social media accounts to new heights with our 3D, AR and video tools.",
         "image": "image_step3.png",
-        "width": "544",
-        "height": "543"
+        "width": "550",
+        "height": "550"
       },
       {
         "key": "4",
-        "title": "Brand ambassadoring",
+        "title1": "Brand",
+        "title2": "ambassadoring",
         "description": "Sqill gives you the tools to co-create with your influencers, employees, clients and fans on instagram and tiktok.",
         "image": "image_step4.png",
-        "width": "520",
-        "height": "460"
+        "width": "550",
+        "height": "550"
       }
     ]
   },

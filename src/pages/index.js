@@ -13,6 +13,7 @@ import {
   Wrapper,
   Hero,
   HeroContent,
+  HeroTitles,
   ImageWrapper,
   StepImage,
   StepWrapper,
@@ -24,7 +25,9 @@ import {
   StyledH2,
   H3,
   StyledP,
+  SpanWrapper,
   Div,
+  DivDescription,
   Partners,
   PartnersLogos,
   PartnerLogo,
@@ -50,17 +53,24 @@ const Home = () => {
         <Wrapper>
           <Hero>
             <HeroContent>
-              <H1>
-                <Image src="/images/logo_gradient.svg" alt="sqill logo" width={110} height={110} />
-                {t('header.title')}
-              </H1>
-              <H2>{t('header.subtitle')}</H2>
+              <HeroTitles hideOnMobile>
+                <H1>
+                  <Image
+                    src="/images/logo_gradient.svg"
+                    alt="sqill logo"
+                    width={110}
+                    height={110}
+                  />
+                  {t('header.title')}
+                </H1>
+                <H2>{t('header.subtitle')}</H2>
+              </HeroTitles>
               <Div>{t('header.description')}</Div>
 
               <Partners>
                 <PartnersLogos>
-                  {trustedBy.options.map((partner) => (
-                    <PartnerLogo>
+                  {trustedBy.options.map((partner, idx) => (
+                    <PartnerLogo key={idx}>
                       <Image
                         src={`/images/4biz/${partner.image}`}
                         alt={partner.name}
@@ -83,6 +93,13 @@ const Home = () => {
                 height={hero.height}
               />
             </ImageWrapper>
+            <HeroTitles hideOnDesktop>
+              <H1>
+                <Image src="/images/logo_gradient.svg" alt="sqill logo" width={110} height={110} />
+                {t('header.title')}
+              </H1>
+              <H2>{t('header.subtitle')}</H2>
+            </HeroTitles>
           </Hero>
         </Wrapper>
 
@@ -106,49 +123,75 @@ const Home = () => {
 
         <Wrapper>
           <StyledH2>{section1.title}</StyledH2>
-          <Hero>
+          <Hero isNotHero>
             <IconsWrapper>
-              {section1.options.map(({ title, description, image, width, height }, idx) => (
-                <IconGrid key={idx}>
-                  <IconImage width={width} height={height}>
-                    <Image src={`/images/4biz/${image}`} alt="" width={width} height={height} />
-                  </IconImage>
-                  <H3>{title}</H3>
-                  <StyledP>{description}</StyledP>
-                </IconGrid>
-              ))}
+              {section1.options.map(
+                ({ title, description1, description2, image, width, height }, idx) => (
+                  <IconGrid key={idx}>
+                    <IconImage width={width} height={height}>
+                      <Image src={`/images/4biz/${image}`} alt="" width={width} height={height} />
+                    </IconImage>
+                    <H3>{title}</H3>
+                    <StyledP>
+                      <SpanWrapper>
+                        {description1.split('').map((letter, descriptionIdx) => (
+                          <span key={descriptionIdx}>{letter}</span>
+                        ))}
+                      </SpanWrapper>
+                      <SpanWrapper>
+                        {description2.split('').map((letter, descriptionIdx) => (
+                          <span key={descriptionIdx}>{letter}</span>
+                        ))}
+                      </SpanWrapper>
+                    </StyledP>
+                  </IconGrid>
+                ),
+              )}
             </IconsWrapper>
           </Hero>
         </Wrapper>
 
         <Wrapper>
-          <StyledH2>{section2.title}</StyledH2>
-          {section2.options.map(({ key, title, description, image, width, height }, idx) => (
-            <StepWrapper key={idx} isOdd={idx % 2}>
-              <div>
-                <H3>
-                  <div>{key}</div>
-                  <span>{title}</span>
-                </H3>
-                <div dangerouslySetInnerHTML={{ __html: description }} />
-              </div>
-              <StepImage>
-                <Image src={`/images/4biz/${image}`} alt="" width={width} height={height} />
-              </StepImage>
-            </StepWrapper>
-          ))}
+          <StyledH2 dangerouslySetInnerHTML={{ __html: section2.title }} />
+          {section2.options.map(
+            ({ key, title1, title2, description, image, width, height }, idx) => (
+              <StepWrapper key={idx} isOdd={idx % 2}>
+                <div>
+                  <H3>
+                    <div>{key}</div>
+                    <SpanWrapper>
+                      {title1.split('').map((letter, titleIdx) => (
+                        <span key={titleIdx}>{letter}</span>
+                      ))}
+                    </SpanWrapper>
+                    <SpanWrapper>
+                      {title2.split('').map((letter, titleIdx) => (
+                        <span key={titleIdx}>{letter}</span>
+                      ))}
+                    </SpanWrapper>
+                  </H3>
+                  <DivDescription dangerouslySetInnerHTML={{ __html: description }} />
+                </div>
+                <StepImage>
+                  <Image src={`/images/4biz/${image}`} alt="" width={width} height={height} />
+                </StepImage>
+              </StepWrapper>
+            ),
+          )}
         </Wrapper>
 
-        <Wrapper isSpaced>
+        <Wrapper>
           <StyledH2>{section3.title}</StyledH2>
-          <IconsWrapper>
-            {section3.options.map(({ description, image, width, height }, idx) => (
-              <IconGrid key={idx}>
-                <Image src={`/images/4biz/${image}`} alt="" width={width} height={height} />
-                <P>{description}</P>
-              </IconGrid>
-            ))}
-          </IconsWrapper>
+          <Hero isNotHero>
+            <IconsWrapper>
+              {section3.options.map(({ description, image, width, height }, idx) => (
+                <IconGrid key={idx}>
+                  <Image src={`/images/4biz/${image}`} alt="" width={width} height={height} />
+                  <P>{description}</P>
+                </IconGrid>
+              ))}
+            </IconsWrapper>
+          </Hero>
         </Wrapper>
 
         <Wrapper>
