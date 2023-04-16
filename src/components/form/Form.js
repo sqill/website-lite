@@ -17,14 +17,12 @@ function identifyUserFromFields(data) {
 const Form = ({ fields, button, tableName, successMessage, errorMessage }) => {
   const formRef = useRef();
   const formFieldsRef = useRef({});
-  const [feedback, setFeedback] = useState();
+  const [feedback, setFeedback] = useState('');
+  const [sending, setSending] = useState(false);
 
   const onFormSubmit = (ev) => {
     ev.preventDefault();
-    
-    // If form was already submitted, return
-    if (feedback) return;
-    
+    setSending(true);
     const data = Object.assign(
       {},
       ...fields.map((field) => ({ [field.id]: formFieldsRef.current[field.id].value })),
@@ -43,7 +41,10 @@ const Form = ({ fields, button, tableName, successMessage, errorMessage }) => {
         fields: data,
       }),
     })
-      .then((response) => response.json())
+      .then((response) => {
+        setSending(false);
+        return response.json();
+      })
       .then((success) => setFeedback(successMessage))
       .catch((error) => setFeedback(errorMessage));
   };
@@ -68,7 +69,9 @@ const Form = ({ fields, button, tableName, successMessage, errorMessage }) => {
           )}
         </Div>
       ))}
-      <Button type="submit" disabled={Boolean(feedback)}>{button}</Button>
+      <Button type="submit" disabled={sending}>
+        {sending ? button.sending : button.send}
+      </Button>
       {feedback && <P>{feedback}</P>}
     </StyledForm>
   );

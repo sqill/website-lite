@@ -134,6 +134,7 @@
     "button": "Vamos falar?",
     "submitSend": "Enviar",
     "submitMore": "Sabe mais",
+    "submitSending": "Enviando",
     "feedback": {
       "title": "Novo registo efectuado com sucesso",
       "text": "Vamos enviar por email os próximos passos!",

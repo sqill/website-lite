@@ -197,7 +197,7 @@ const Home = () => {
         <Wrapper>
           <Form
             fields={form.fields}
-            button={form.submitMore}
+            button={{ send: form.submitMore, sending: form.submitSending }}
             tableName="4biz"
             successMessage={`${form.feedback.title} ${form.feedback.text}`}
             errorMessage={form.feedback.error}
@@ -209,7 +209,7 @@ const Home = () => {
         <Modal onClick={() => setShowForm(false)}>
           <Form
             fields={form.fields}
-            button={form.submitSend}
+            button={{ send: form.submitSend, sending: form.submitSending }}
             tableName="4biz"
             successMessage={`${form.feedback.title} ${form.feedback.text}`}
             errorMessage={form.feedback.error}

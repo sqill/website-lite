@@ -17,6 +17,7 @@
       ],
       "button": "Let's talk",
       "submit": "Send",
+      "sending": "Sending",
       "feedback": {
         "title": "New registration submitted with success.",
         "text": "We will send you an email with the next steps",

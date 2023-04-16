@@ -54,7 +54,7 @@ const SqillForPros = () => {
         <Modal onClick={() => setShowForm(false)}>
           <Form
             fields={form.fields}
-            button={form.submit}
+            button={{ send: form.submit, sending: form.sending }}
             tableName="4pros"
             successMessage={`${form.feedback.title} ${form.feedback.text}`}
             errorMessage={form.feedback.error}
