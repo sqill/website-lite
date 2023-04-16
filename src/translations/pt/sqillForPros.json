@@ -17,6 +17,7 @@
       ],
       "button": "Vamos falar?",
       "submit": "Enviar",
+      "sending": "Enviando",
       "feedback": {
         "title": "Novo registo efectuado com sucesso",
         "text": "Vamos enviar por email os próximos passos!",

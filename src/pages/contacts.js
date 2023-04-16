@@ -23,7 +23,7 @@ const Contacts = () => {
           </H1>
           <Form
             fields={form.fields}
-            button={form.button}
+            button={{ send: form.button, sending: form.sending }}
             tableName="sayHi"
             successMessage={`${form.feedback.title} ${form.feedback.text}`}
             errorMessage={form.feedback.error}

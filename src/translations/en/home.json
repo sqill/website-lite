@@ -134,6 +134,7 @@
     "button": "Let's talk",
     "submitSend": "Send",
     "submitMore": "Talk to us",
+    "submitSending": "Sending",
     "feedback": {
       "title": "New registration submitted with success.",
       "text": "We will send you an email with the next steps",
