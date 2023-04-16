@@ -107,9 +107,9 @@ export function injectLfTracker() {
 }
 
 export const identify = ({ email, name = '' }) => {
-  if (!window.ldfdr) return;
+  if (!window.ldfdr && !window.ldfdr.identify) return;
 
-  window.ldfdr?.identify({
+  window.ldfdr.identify({
     email,
     firstName: name.split(" ", 1)[0],
     lastName: name.split(" ").slice(1).join(" ")
