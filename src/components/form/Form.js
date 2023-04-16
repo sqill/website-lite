@@ -40,13 +40,11 @@ const Form = ({ fields, button, tableName, successMessage, errorMessage }) => {
         tableName: tableName,
         fields: data,
       }),
-    })
-      .then((response) => {
-        setSending(false);
-        return response.json();
-      })
-      .then((success) => setFeedback(successMessage))
-      .catch((error) => setFeedback(errorMessage));
+    }).then((response) => {
+      setSending(false);
+      response.ok ? setFeedback(successMessage) : setFeedback(errorMessage);
+      return response.json();
+    });
   };
 
   return (

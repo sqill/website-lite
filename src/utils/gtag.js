@@ -1,17 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID
-export const LF_TRACKING_ID = process.env.NEXT_PUBLIC_LF_ID
+export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
+export const LF_TRACKING_ID = process.env.NEXT_PUBLIC_LF_ID;
 
 export function injectgTagScript() {
-	if (process.env.NODE_ENV !== 'production' || !GA_TRACKING_ID) return;
+  if (process.env.NODE_ENV !== 'production' || !GA_TRACKING_ID) return;
 
-	return (
-		<React.Fragment>
-			<script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-      />
+  return (
+    <React.Fragment>
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
 
       <script
         dangerouslySetInnerHTML={{
@@ -25,14 +22,14 @@ export function injectgTagScript() {
           `,
         }}
       />
-		</React.Fragment>
-	)
+    </React.Fragment>
+  );
 }
 
 export function injectChatwootScript() {
-	if (process.env.NODE_ENV !== 'production') return;
+  if (process.env.NODE_ENV !== 'production') return;
 
-	return (
+  return (
     <script
       dangerouslySetInnerHTML={{
         __html: `
@@ -53,20 +50,20 @@ export function injectChatwootScript() {
         `,
       }}
     />
-	)
+  );
 }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url) => {
   window?.gtag?.('config', GA_TRACKING_ID, {
     page_path: url,
-  })
+  });
 
   window.ldfdr?.pageview?.({
     pageUrl: url,
-    pageTitle: document.title
+    pageTitle: document.title,
   });
-}
+};
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = ({ action, category, label = null, value = null }) => {
@@ -76,8 +73,8 @@ export const event = ({ action, category, label = null, value = null }) => {
     event_category: category,
     event_label: label,
     value: value,
-  })
-}
+  });
+};
 
 export function injectLfTracker() {
   if (process.env.NODE_ENV !== 'production') return;
@@ -100,18 +97,18 @@ export function injectLfTracker() {
               ce(ss);
             })(document, 'script', 'https://sc.lfeeder.com/lftracker_${LF_TRACKING_ID}.js');
           })();
-        `
-      }}>
-    </script>
-  )
+        `,
+      }}
+    ></script>
+  );
 }
 
 export const identify = ({ email, name = '' }) => {
-  if (!window.ldfdr && !window.ldfdr.identify) return;
+  if (!window.ldfdr && !window.ldfdr?.identify) return;
 
-  window.ldfdr.identify({
+  window.ldfdr.identify?.({
     email,
-    firstName: name.split(" ", 1)[0],
-    lastName: name.split(" ").slice(1).join(" ")
+    firstName: name.split(' ', 1)[0],
+    lastName: name.split(' ').slice(1).join(' '),
   });
-}
+};
