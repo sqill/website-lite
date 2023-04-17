@@ -1,8 +1,8 @@
 const defaultOgTags = {
   title: 'sqill',
   description: 'sqill is the video app for athletes. We are disrupting the sports industry through short-form vídeos (sqills) and artificial intelligence, showcasing talent (athletes) and connecting them with demand (clubs, agents and brands).',
-  url: 'https://app.heysqill.com',
-  image: 'https://app.heysqill.com/images/media.png',
+  url: 'https://www.heysqill.com',
+  image: 'https://www.heysqill.com/images/og.png',
 }
 
 export function generateOpenGraphTags({
